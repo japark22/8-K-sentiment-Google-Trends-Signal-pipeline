@@ -1,0 +1,28 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Scheduled pipeline run logs (verbose; the audit trail lives in run_log.csv)
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Bulk raw data is NOT tracked — it is regenerable by running the pipeline,
+# and keeping it out keeps the repo lightweight and professional. A few small
+# example files live in data/sample/ so the data format is still visible.
+/data/prices/
+/data/filings_8k/
+/data/trends/
+
+# Runtime logs (verbose; the audit trail lives in run_log.csv)
+results/*.log
+# local settings, never commit
+.env
+# third-party dictionary, redistribute via its own source
+data/lm_master_dictionary.csv

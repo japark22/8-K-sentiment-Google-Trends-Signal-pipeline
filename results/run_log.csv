@@ -1,0 +1,747 @@
+run_time,stage,status,count,error_summary
+2026-07-06T07:28:37Z,run_start,success,0,ONE-TIME SETUP
+2026-07-06T07:28:40Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-07-06T07:28:42Z,fetch_prices_ticker,failed,0,AAPL: insufficient data (empty response from source)
+2026-07-06T07:28:42Z,fetch_prices_ticker,failed,0,MSFT: insufficient data (empty response from source)
+2026-07-06T07:28:43Z,fetch_prices_ticker,failed,0,AMZN: insufficient data (empty response from source)
+2026-07-06T07:28:43Z,fetch_prices_ticker,failed,0,NVDA: insufficient data (empty response from source)
+2026-07-06T07:28:44Z,fetch_prices_ticker,failed,0,GOOGL: insufficient data (empty response from source)
+2026-07-06T07:28:44Z,fetch_prices_ticker,failed,0,META: insufficient data (empty response from source)
+2026-07-06T07:28:45Z,fetch_prices_ticker,failed,0,TSLA: insufficient data (empty response from source)
+2026-07-06T07:28:45Z,fetch_prices_ticker,failed,0,BRK-B: insufficient data (empty response from source)
+2026-07-06T07:28:46Z,fetch_prices_ticker,failed,0,JPM: insufficient data (empty response from source)
+2026-07-06T07:28:46Z,fetch_prices_ticker,failed,0,V: insufficient data (empty response from source)
+2026-07-06T07:28:47Z,fetch_prices_ticker,failed,0,UNH: insufficient data (empty response from source)
+2026-07-06T07:28:47Z,fetch_prices_ticker,failed,0,XOM: insufficient data (empty response from source)
+2026-07-06T07:28:48Z,fetch_prices_ticker,failed,0,JNJ: insufficient data (empty response from source)
+2026-07-06T07:28:48Z,fetch_prices_ticker,failed,0,LLY: insufficient data (empty response from source)
+2026-07-06T07:28:49Z,fetch_prices_ticker,failed,0,MA: insufficient data (empty response from source)
+2026-07-06T07:28:49Z,fetch_prices_ticker,failed,0,PG: insufficient data (empty response from source)
+2026-07-06T07:28:50Z,fetch_prices_ticker,failed,0,HD: insufficient data (empty response from source)
+2026-07-06T07:28:50Z,fetch_prices_ticker,failed,0,AVGO: insufficient data (empty response from source)
+2026-07-06T07:28:51Z,fetch_prices_ticker,failed,0,CVX: insufficient data (empty response from source)
+2026-07-06T07:28:51Z,fetch_prices_ticker,failed,0,MRK: insufficient data (empty response from source)
+2026-07-06T07:28:52Z,fetch_prices_ticker,failed,0,ABBV: insufficient data (empty response from source)
+2026-07-06T07:28:52Z,fetch_prices_ticker,failed,0,COST: insufficient data (empty response from source)
+2026-07-06T07:28:53Z,fetch_prices_ticker,failed,0,PEP: insufficient data (empty response from source)
+2026-07-06T07:28:54Z,fetch_prices_ticker,failed,0,KO: insufficient data (empty response from source)
+2026-07-06T07:28:54Z,fetch_prices_ticker,failed,0,ADBE: insufficient data (empty response from source)
+2026-07-06T07:28:54Z,fetch_prices_ticker,failed,0,WMT: insufficient data (empty response from source)
+2026-07-06T07:28:55Z,fetch_prices_ticker,failed,0,BAC: insufficient data (empty response from source)
+2026-07-06T07:28:55Z,fetch_prices_ticker,failed,0,CRM: insufficient data (empty response from source)
+2026-07-06T07:28:56Z,fetch_prices_ticker,failed,0,MCD: insufficient data (empty response from source)
+2026-07-06T07:28:56Z,fetch_prices_ticker,failed,0,CSCO: insufficient data (empty response from source)
+2026-07-06T07:28:57Z,fetch_prices_ticker,failed,0,ACN: insufficient data (empty response from source)
+2026-07-06T07:28:57Z,fetch_prices_ticker,failed,0,TMO: insufficient data (empty response from source)
+2026-07-06T07:28:58Z,fetch_prices_ticker,failed,0,ABT: insufficient data (empty response from source)
+2026-07-06T07:28:58Z,fetch_prices_ticker,failed,0,NFLX: insufficient data (empty response from source)
+2026-07-06T07:28:59Z,fetch_prices_ticker,failed,0,LIN: insufficient data (empty response from source)
+2026-07-06T07:28:59Z,fetch_prices_ticker,failed,0,INTC: insufficient data (empty response from source)
+2026-07-06T07:29:00Z,fetch_prices_ticker,failed,0,AMD: insufficient data (empty response from source)
+2026-07-06T07:29:01Z,fetch_prices_ticker,failed,0,DIS: insufficient data (empty response from source)
+2026-07-06T07:29:01Z,fetch_prices_ticker,failed,0,WFC: insufficient data (empty response from source)
+2026-07-06T07:29:02Z,fetch_prices_ticker,failed,0,QCOM: insufficient data (empty response from source)
+2026-07-06T07:29:02Z,fetch_prices_ticker,failed,0,TXN: insufficient data (empty response from source)
+2026-07-06T07:29:03Z,fetch_prices_ticker,failed,0,PM: insufficient data (empty response from source)
+2026-07-06T07:29:03Z,fetch_prices_ticker,failed,0,DHR: insufficient data (empty response from source)
+2026-07-06T07:29:04Z,fetch_prices_ticker,failed,0,VZ: insufficient data (empty response from source)
+2026-07-06T07:29:04Z,fetch_prices_ticker,failed,0,CAT: insufficient data (empty response from source)
+2026-07-06T07:29:05Z,fetch_prices_ticker,failed,0,INTU: insufficient data (empty response from source)
+2026-07-06T07:29:05Z,fetch_prices_ticker,failed,0,IBM: insufficient data (empty response from source)
+2026-07-06T07:29:06Z,fetch_prices_ticker,failed,0,NKE: insufficient data (empty response from source)
+2026-07-06T07:29:06Z,fetch_prices_ticker,failed,0,NOW: insufficient data (empty response from source)
+2026-07-06T07:29:07Z,fetch_prices_ticker,failed,0,GE: insufficient data (empty response from source)
+2026-07-06T07:29:07Z,fetch_prices_ticker,failed,0,MMM: insufficient data (empty response from source)
+2026-07-06T07:29:08Z,fetch_prices_ticker,failed,0,AOS: insufficient data (empty response from source)
+2026-07-06T07:29:08Z,fetch_prices_ticker,failed,0,AES: insufficient data (empty response from source)
+2026-07-06T07:29:09Z,fetch_prices_ticker,failed,0,AFL: insufficient data (empty response from source)
+2026-07-06T07:29:09Z,fetch_prices_ticker,failed,0,A: insufficient data (empty response from source)
+2026-07-06T07:29:10Z,fetch_prices_ticker,failed,0,APD: insufficient data (empty response from source)
+2026-07-06T07:29:10Z,fetch_prices_ticker,failed,0,ABNB: insufficient data (empty response from source)
+2026-07-06T07:29:11Z,fetch_prices_ticker,failed,0,AKAM: insufficient data (empty response from source)
+2026-07-06T07:29:11Z,fetch_prices_ticker,failed,0,ALB: insufficient data (empty response from source)
+2026-07-06T07:29:12Z,fetch_prices_ticker,failed,0,ARE: insufficient data (empty response from source)
+2026-07-06T07:29:12Z,fetch_prices_ticker,failed,0,ALGN: insufficient data (empty response from source)
+2026-07-06T07:29:13Z,fetch_prices_ticker,failed,0,ALLE: insufficient data (empty response from source)
+2026-07-06T07:29:13Z,fetch_prices_ticker,failed,0,LNT: insufficient data (empty response from source)
+2026-07-06T07:29:14Z,fetch_prices_ticker,failed,0,ALL: insufficient data (empty response from source)
+2026-07-06T07:29:14Z,fetch_prices_ticker,failed,0,GOOG: insufficient data (empty response from source)
+2026-07-06T07:29:15Z,fetch_prices_ticker,failed,0,MO: insufficient data (empty response from source)
+2026-07-06T07:29:15Z,fetch_prices_ticker,failed,0,AMCR: insufficient data (empty response from source)
+2026-07-06T07:29:16Z,fetch_prices_ticker,failed,0,AEE: insufficient data (empty response from source)
+2026-07-06T07:29:16Z,fetch_prices_ticker,failed,0,AEP: insufficient data (empty response from source)
+2026-07-06T07:29:17Z,fetch_prices_ticker,failed,0,AXP: insufficient data (empty response from source)
+2026-07-06T07:29:17Z,fetch_prices_ticker,failed,0,AIG: insufficient data (empty response from source)
+2026-07-06T07:29:18Z,fetch_prices_ticker,failed,0,AMT: insufficient data (empty response from source)
+2026-07-06T07:29:18Z,fetch_prices_ticker,failed,0,AWK: insufficient data (empty response from source)
+2026-07-06T07:29:19Z,fetch_prices_ticker,failed,0,AMP: insufficient data (empty response from source)
+2026-07-06T07:29:19Z,fetch_prices_ticker,failed,0,AME: insufficient data (empty response from source)
+2026-07-06T07:29:20Z,fetch_prices_ticker,failed,0,AMGN: insufficient data (empty response from source)
+2026-07-06T07:29:20Z,fetch_prices_ticker,failed,0,APH: insufficient data (empty response from source)
+2026-07-06T07:29:21Z,fetch_prices_ticker,failed,0,ADI: insufficient data (empty response from source)
+2026-07-06T07:29:21Z,fetch_prices_ticker,failed,0,AON: insufficient data (empty response from source)
+2026-07-06T07:29:22Z,fetch_prices_ticker,failed,0,APA: insufficient data (empty response from source)
+2026-07-06T07:29:22Z,fetch_prices_ticker,failed,0,APO: insufficient data (empty response from source)
+2026-07-06T07:29:23Z,fetch_prices_ticker,failed,0,AMAT: insufficient data (empty response from source)
+2026-07-06T07:29:23Z,fetch_prices_ticker,failed,0,APP: insufficient data (empty response from source)
+2026-07-06T07:29:24Z,fetch_prices_ticker,failed,0,APTV: insufficient data (empty response from source)
+2026-07-06T07:29:24Z,fetch_prices_ticker,failed,0,ACGL: insufficient data (empty response from source)
+2026-07-06T07:29:25Z,fetch_prices_ticker,failed,0,ADM: insufficient data (empty response from source)
+2026-07-06T07:29:25Z,fetch_prices_ticker,failed,0,ARES: insufficient data (empty response from source)
+2026-07-06T07:29:26Z,fetch_prices_ticker,failed,0,ANET: insufficient data (empty response from source)
+2026-07-06T07:29:26Z,fetch_prices_ticker,failed,0,AJG: insufficient data (empty response from source)
+2026-07-06T07:29:27Z,fetch_prices_ticker,failed,0,AIZ: insufficient data (empty response from source)
+2026-07-06T07:29:27Z,fetch_prices_ticker,failed,0,T: insufficient data (empty response from source)
+2026-07-06T07:29:28Z,fetch_prices_ticker,failed,0,ATO: insufficient data (empty response from source)
+2026-07-06T07:29:28Z,fetch_prices_ticker,failed,0,ADSK: insufficient data (empty response from source)
+2026-07-06T07:29:29Z,fetch_prices_ticker,failed,0,ADP: insufficient data (empty response from source)
+2026-07-06T07:29:29Z,fetch_prices_ticker,failed,0,AZO: insufficient data (empty response from source)
+2026-07-06T07:29:30Z,fetch_prices_ticker,failed,0,AVB: insufficient data (empty response from source)
+2026-07-06T07:29:30Z,fetch_prices_ticker,failed,0,AVY: insufficient data (empty response from source)
+2026-07-06T07:29:31Z,fetch_prices_ticker,failed,0,AXON: insufficient data (empty response from source)
+2026-07-06T07:29:31Z,fetch_prices_ticker,failed,0,BKR: insufficient data (empty response from source)
+2026-07-06T07:29:32Z,fetch_prices_ticker,failed,0,BALL: insufficient data (empty response from source)
+2026-07-06T07:29:32Z,fetch_prices_ticker,failed,0,BAX: insufficient data (empty response from source)
+2026-07-06T07:29:33Z,fetch_prices_ticker,failed,0,BDX: insufficient data (empty response from source)
+2026-07-06T07:29:33Z,fetch_prices_ticker,failed,0,BBY: insufficient data (empty response from source)
+2026-07-06T07:29:34Z,fetch_prices_ticker,failed,0,TECH: insufficient data (empty response from source)
+2026-07-06T07:29:34Z,fetch_prices_ticker,failed,0,BIIB: insufficient data (empty response from source)
+2026-07-06T07:29:35Z,fetch_prices_ticker,failed,0,BLK: insufficient data (empty response from source)
+2026-07-06T07:29:35Z,fetch_prices_ticker,failed,0,BX: insufficient data (empty response from source)
+2026-07-06T07:29:36Z,fetch_prices_ticker,failed,0,XYZ: insufficient data (empty response from source)
+2026-07-06T07:29:36Z,fetch_prices_ticker,failed,0,BNY: insufficient data (empty response from source)
+2026-07-06T07:29:37Z,fetch_prices_ticker,failed,0,BA: insufficient data (empty response from source)
+2026-07-06T07:29:37Z,fetch_prices_ticker,failed,0,BKNG: insufficient data (empty response from source)
+2026-07-06T07:29:38Z,fetch_prices_ticker,failed,0,BSX: insufficient data (empty response from source)
+2026-07-06T07:29:38Z,fetch_prices_ticker,failed,0,BMY: insufficient data (empty response from source)
+2026-07-06T07:29:39Z,fetch_prices_ticker,failed,0,BR: insufficient data (empty response from source)
+2026-07-06T07:29:39Z,fetch_prices_ticker,failed,0,BRO: insufficient data (empty response from source)
+2026-07-06T07:29:40Z,fetch_prices_ticker,failed,0,BF-B: insufficient data (empty response from source)
+2026-07-06T07:29:40Z,fetch_prices_ticker,failed,0,BLDR: insufficient data (empty response from source)
+2026-07-06T07:29:41Z,fetch_prices_ticker,failed,0,BG: insufficient data (empty response from source)
+2026-07-06T07:29:41Z,fetch_prices_ticker,failed,0,BXP: insufficient data (empty response from source)
+2026-07-06T07:29:42Z,fetch_prices_ticker,failed,0,CHRW: insufficient data (empty response from source)
+2026-07-06T07:29:43Z,fetch_prices_ticker,failed,0,CDNS: insufficient data (empty response from source)
+2026-07-06T07:29:43Z,fetch_prices_ticker,failed,0,CPT: insufficient data (empty response from source)
+2026-07-06T07:29:44Z,fetch_prices_ticker,failed,0,COF: insufficient data (empty response from source)
+2026-07-06T07:29:44Z,fetch_prices_ticker,failed,0,CAH: insufficient data (empty response from source)
+2026-07-06T07:29:45Z,fetch_prices_ticker,failed,0,CCL: insufficient data (empty response from source)
+2026-07-06T07:29:45Z,fetch_prices_ticker,failed,0,CARR: insufficient data (empty response from source)
+2026-07-06T07:29:46Z,fetch_prices_ticker,failed,0,CVNA: insufficient data (empty response from source)
+2026-07-06T07:29:46Z,fetch_prices_ticker,failed,0,CASY: insufficient data (empty response from source)
+2026-07-06T07:29:47Z,fetch_prices_ticker,failed,0,CBOE: insufficient data (empty response from source)
+2026-07-06T07:29:47Z,fetch_prices_ticker,failed,0,CBRE: insufficient data (empty response from source)
+2026-07-06T07:29:48Z,fetch_prices_ticker,failed,0,CDW: insufficient data (empty response from source)
+2026-07-06T07:29:48Z,fetch_prices_ticker,failed,0,COR: insufficient data (empty response from source)
+2026-07-06T07:29:49Z,fetch_prices_ticker,failed,0,CNC: insufficient data (empty response from source)
+2026-07-06T07:29:49Z,fetch_prices_ticker,failed,0,CNP: insufficient data (empty response from source)
+2026-07-06T07:29:50Z,fetch_prices_ticker,failed,0,CF: insufficient data (empty response from source)
+2026-07-06T07:29:50Z,fetch_prices_ticker,failed,0,CRL: insufficient data (empty response from source)
+2026-07-06T07:29:51Z,fetch_prices_ticker,failed,0,SCHW: insufficient data (empty response from source)
+2026-07-06T07:29:51Z,fetch_prices_ticker,failed,0,CHTR: insufficient data (empty response from source)
+2026-07-06T07:29:52Z,fetch_prices_ticker,failed,0,CMG: insufficient data (empty response from source)
+2026-07-06T07:29:52Z,fetch_prices_ticker,failed,0,CB: insufficient data (empty response from source)
+2026-07-06T07:29:53Z,fetch_prices_ticker,failed,0,CHD: insufficient data (empty response from source)
+2026-07-06T07:29:53Z,fetch_prices_ticker,failed,0,CIEN: insufficient data (empty response from source)
+2026-07-06T07:29:54Z,fetch_prices_ticker,failed,0,CI: insufficient data (empty response from source)
+2026-07-06T07:29:54Z,fetch_prices_ticker,failed,0,CINF: insufficient data (empty response from source)
+2026-07-06T07:29:55Z,fetch_prices_ticker,failed,0,CTAS: insufficient data (empty response from source)
+2026-07-06T07:29:55Z,fetch_prices_ticker,failed,0,C: insufficient data (empty response from source)
+2026-07-06T07:29:56Z,fetch_prices_ticker,failed,0,CFG: insufficient data (empty response from source)
+2026-07-06T07:29:56Z,fetch_prices_ticker,failed,0,CLX: insufficient data (empty response from source)
+2026-07-06T07:29:57Z,fetch_prices_ticker,failed,0,CME: insufficient data (empty response from source)
+2026-07-06T07:29:57Z,fetch_prices_ticker,failed,0,CMS: insufficient data (empty response from source)
+2026-07-06T07:29:58Z,fetch_prices_ticker,failed,0,CTSH: insufficient data (empty response from source)
+2026-07-06T07:29:58Z,fetch_prices_ticker,failed,0,COHR: insufficient data (empty response from source)
+2026-07-06T07:29:59Z,fetch_prices_ticker,failed,0,COIN: insufficient data (empty response from source)
+2026-07-06T07:29:59Z,fetch_prices_ticker,failed,0,CL: insufficient data (empty response from source)
+2026-07-06T07:30:00Z,fetch_prices_ticker,failed,0,CMCSA: insufficient data (empty response from source)
+2026-07-06T07:30:00Z,fetch_prices_ticker,failed,0,FIX: insufficient data (empty response from source)
+2026-07-06T07:30:01Z,fetch_prices_ticker,failed,0,COP: insufficient data (empty response from source)
+2026-07-06T07:30:01Z,fetch_prices_ticker,failed,0,ED: insufficient data (empty response from source)
+2026-07-06T07:30:02Z,fetch_prices_ticker,failed,0,STZ: insufficient data (empty response from source)
+2026-07-06T07:30:02Z,fetch_prices_ticker,failed,0,CEG: insufficient data (empty response from source)
+2026-07-06T07:30:03Z,fetch_prices_ticker,failed,0,COO: insufficient data (empty response from source)
+2026-07-06T07:30:03Z,fetch_prices_ticker,failed,0,CPRT: insufficient data (empty response from source)
+2026-07-06T07:30:04Z,fetch_prices_ticker,failed,0,GLW: insufficient data (empty response from source)
+2026-07-06T07:30:04Z,fetch_prices_ticker,failed,0,CPAY: insufficient data (empty response from source)
+2026-07-06T07:30:05Z,fetch_prices_ticker,failed,0,CTVA: insufficient data (empty response from source)
+2026-07-06T07:30:05Z,fetch_prices_ticker,failed,0,CSGP: insufficient data (empty response from source)
+2026-07-06T07:30:06Z,fetch_prices_ticker,failed,0,CRH: insufficient data (empty response from source)
+2026-07-06T07:30:06Z,fetch_prices_ticker,failed,0,CRWD: insufficient data (empty response from source)
+2026-07-06T07:30:07Z,fetch_prices_ticker,failed,0,CCI: insufficient data (empty response from source)
+2026-07-06T07:30:07Z,fetch_prices_ticker,failed,0,CSX: insufficient data (empty response from source)
+2026-07-06T07:30:08Z,fetch_prices_ticker,failed,0,CMI: insufficient data (empty response from source)
+2026-07-06T07:30:08Z,fetch_prices_ticker,failed,0,CVS: insufficient data (empty response from source)
+2026-07-06T07:30:09Z,fetch_prices_ticker,failed,0,DRI: insufficient data (empty response from source)
+2026-07-06T07:30:11Z,fetch_prices_ticker,failed,0,DDOG: insufficient data (empty response from source)
+2026-07-06T07:30:12Z,fetch_prices_ticker,failed,0,DVA: insufficient data (empty response from source)
+2026-07-06T07:30:12Z,fetch_prices_ticker,failed,0,DECK: insufficient data (empty response from source)
+2026-07-06T07:30:13Z,fetch_prices_ticker,failed,0,DE: insufficient data (empty response from source)
+2026-07-06T07:30:13Z,fetch_prices_ticker,failed,0,DELL: insufficient data (empty response from source)
+2026-07-06T07:30:14Z,fetch_prices_ticker,failed,0,DAL: insufficient data (empty response from source)
+2026-07-06T07:30:15Z,fetch_prices_ticker,failed,0,DVN: insufficient data (empty response from source)
+2026-07-06T07:30:15Z,fetch_prices_ticker,failed,0,DXCM: insufficient data (empty response from source)
+2026-07-06T07:30:15Z,fetch_prices_ticker,failed,0,FANG: insufficient data (empty response from source)
+2026-07-06T07:30:16Z,fetch_prices_ticker,failed,0,DLR: insufficient data (empty response from source)
+2026-07-06T07:30:16Z,fetch_prices_ticker,failed,0,DG: insufficient data (empty response from source)
+2026-07-06T07:30:17Z,fetch_prices_ticker,failed,0,DLTR: insufficient data (empty response from source)
+2026-07-06T07:30:17Z,fetch_prices_ticker,failed,0,D: insufficient data (empty response from source)
+2026-07-06T07:30:18Z,fetch_prices_ticker,failed,0,DPZ: insufficient data (empty response from source)
+2026-07-06T07:30:18Z,fetch_prices_ticker,failed,0,DASH: insufficient data (empty response from source)
+2026-07-06T07:30:19Z,fetch_prices_ticker,failed,0,DOV: insufficient data (empty response from source)
+2026-07-06T07:30:19Z,fetch_prices_ticker,failed,0,DOW: insufficient data (empty response from source)
+2026-07-06T07:30:20Z,fetch_prices_ticker,failed,0,DHI: insufficient data (empty response from source)
+2026-07-06T07:30:20Z,fetch_prices_ticker,failed,0,DTE: insufficient data (empty response from source)
+2026-07-06T07:30:21Z,fetch_prices_ticker,failed,0,DUK: insufficient data (empty response from source)
+2026-07-06T07:30:21Z,fetch_prices_ticker,failed,0,DD: insufficient data (empty response from source)
+2026-07-06T07:30:22Z,fetch_prices_ticker,failed,0,ETN: insufficient data (empty response from source)
+2026-07-06T07:30:23Z,fetch_prices_ticker,failed,0,EBAY: insufficient data (empty response from source)
+2026-07-06T07:30:23Z,fetch_prices_ticker,failed,0,ECHO: insufficient data (empty response from source)
+2026-07-06T07:30:24Z,fetch_prices_ticker,failed,0,ECL: insufficient data (empty response from source)
+2026-07-06T07:30:24Z,fetch_prices_ticker,failed,0,EIX: insufficient data (empty response from source)
+2026-07-06T07:30:25Z,fetch_prices_ticker,failed,0,EW: insufficient data (empty response from source)
+2026-07-06T07:30:25Z,fetch_prices_ticker,failed,0,EA: insufficient data (empty response from source)
+2026-07-06T07:30:26Z,fetch_prices_ticker,failed,0,ELV: insufficient data (empty response from source)
+2026-07-06T07:30:26Z,fetch_prices_ticker,failed,0,EME: insufficient data (empty response from source)
+2026-07-06T07:30:27Z,fetch_prices_ticker,failed,0,EMR: insufficient data (empty response from source)
+2026-07-06T07:30:27Z,fetch_prices_ticker,failed,0,ETR: insufficient data (empty response from source)
+2026-07-06T07:30:28Z,fetch_prices_ticker,failed,0,EOG: insufficient data (empty response from source)
+2026-07-06T07:30:28Z,fetch_prices_ticker,failed,0,EQT: insufficient data (empty response from source)
+2026-07-06T07:30:29Z,fetch_prices_ticker,failed,0,EFX: insufficient data (empty response from source)
+2026-07-06T07:30:29Z,fetch_prices_ticker,failed,0,EQIX: insufficient data (empty response from source)
+2026-07-06T07:30:30Z,fetch_prices_ticker,failed,0,EQR: insufficient data (empty response from source)
+2026-07-06T07:30:30Z,fetch_prices_ticker,failed,0,ERIE: insufficient data (empty response from source)
+2026-07-06T07:30:31Z,fetch_prices_ticker,failed,0,ESS: insufficient data (empty response from source)
+2026-07-06T07:30:31Z,fetch_prices_ticker,failed,0,EL: insufficient data (empty response from source)
+2026-07-06T07:30:32Z,fetch_prices_ticker,failed,0,EG: insufficient data (empty response from source)
+2026-07-06T07:30:32Z,fetch_prices_ticker,failed,0,EVRG: insufficient data (empty response from source)
+2026-07-06T07:30:33Z,fetch_prices_ticker,failed,0,ES: insufficient data (empty response from source)
+2026-07-06T07:30:33Z,fetch_prices_ticker,failed,0,EXC: insufficient data (empty response from source)
+2026-07-06T07:30:34Z,fetch_prices_ticker,failed,0,EXE: insufficient data (empty response from source)
+2026-07-06T07:30:34Z,fetch_prices_ticker,failed,0,EXPE: insufficient data (empty response from source)
+2026-07-06T07:30:35Z,fetch_prices_ticker,failed,0,EXPD: insufficient data (empty response from source)
+2026-07-06T07:30:35Z,fetch_prices_ticker,failed,0,EXR: insufficient data (empty response from source)
+2026-07-06T07:30:36Z,fetch_prices_ticker,failed,0,FFIV: insufficient data (empty response from source)
+2026-07-06T07:30:36Z,fetch_prices_ticker,failed,0,FDS: insufficient data (empty response from source)
+2026-07-06T07:30:37Z,fetch_prices_ticker,failed,0,FICO: insufficient data (empty response from source)
+2026-07-06T07:30:37Z,fetch_prices_ticker,failed,0,FAST: insufficient data (empty response from source)
+2026-07-06T07:30:38Z,fetch_prices_ticker,failed,0,FRT: insufficient data (empty response from source)
+2026-07-06T07:30:38Z,fetch_prices_ticker,failed,0,FDX: insufficient data (empty response from source)
+2026-07-06T07:30:39Z,fetch_prices_ticker,failed,0,FDXF: insufficient data (empty response from source)
+2026-07-06T07:30:39Z,fetch_prices_ticker,failed,0,FIS: insufficient data (empty response from source)
+2026-07-06T07:30:40Z,fetch_prices_ticker,failed,0,FITB: insufficient data (empty response from source)
+2026-07-06T07:30:40Z,fetch_prices_ticker,failed,0,FSLR: insufficient data (empty response from source)
+2026-07-06T07:30:41Z,fetch_prices_ticker,failed,0,FE: insufficient data (empty response from source)
+2026-07-06T07:30:41Z,fetch_prices_ticker,failed,0,FISV: insufficient data (empty response from source)
+2026-07-06T07:30:42Z,fetch_prices_ticker,failed,0,FLEX: insufficient data (empty response from source)
+2026-07-06T07:30:42Z,fetch_prices_ticker,failed,0,F: insufficient data (empty response from source)
+2026-07-06T07:30:43Z,fetch_prices_ticker,failed,0,FTNT: insufficient data (empty response from source)
+2026-07-06T07:30:43Z,fetch_prices_ticker,failed,0,FTV: insufficient data (empty response from source)
+2026-07-06T07:30:44Z,fetch_prices_ticker,failed,0,FOXA: insufficient data (empty response from source)
+2026-07-06T07:30:44Z,fetch_prices_ticker,failed,0,FOX: insufficient data (empty response from source)
+2026-07-06T07:30:45Z,fetch_prices_ticker,failed,0,BEN: insufficient data (empty response from source)
+2026-07-06T07:30:45Z,fetch_prices_ticker,failed,0,FCX: insufficient data (empty response from source)
+2026-07-06T07:30:46Z,fetch_prices_ticker,failed,0,GRMN: insufficient data (empty response from source)
+2026-07-06T07:30:46Z,fetch_prices_ticker,failed,0,IT: insufficient data (empty response from source)
+2026-07-06T07:30:47Z,fetch_prices_ticker,failed,0,GEHC: insufficient data (empty response from source)
+2026-07-06T07:30:47Z,fetch_prices_ticker,failed,0,GEV: insufficient data (empty response from source)
+2026-07-06T07:30:48Z,fetch_prices_ticker,failed,0,GEN: insufficient data (empty response from source)
+2026-07-06T07:30:48Z,fetch_prices_ticker,failed,0,GNRC: insufficient data (empty response from source)
+2026-07-06T07:30:49Z,fetch_prices_ticker,failed,0,GD: insufficient data (empty response from source)
+2026-07-06T07:30:49Z,fetch_prices_ticker,failed,0,GIS: insufficient data (empty response from source)
+2026-07-06T07:30:50Z,fetch_prices_ticker,failed,0,GM: insufficient data (empty response from source)
+2026-07-06T07:30:50Z,fetch_prices_ticker,failed,0,GPC: insufficient data (empty response from source)
+2026-07-06T07:30:51Z,fetch_prices_ticker,failed,0,GILD: insufficient data (empty response from source)
+2026-07-06T07:30:51Z,fetch_prices_ticker,failed,0,GPN: insufficient data (empty response from source)
+2026-07-06T07:30:52Z,fetch_prices_ticker,failed,0,GL: insufficient data (empty response from source)
+2026-07-06T07:30:52Z,fetch_prices_ticker,failed,0,GDDY: insufficient data (empty response from source)
+2026-07-06T07:30:53Z,fetch_prices_ticker,failed,0,GS: insufficient data (empty response from source)
+2026-07-06T07:30:53Z,fetch_prices_ticker,failed,0,HAL: insufficient data (empty response from source)
+2026-07-06T07:30:54Z,fetch_prices_ticker,failed,0,HIG: insufficient data (empty response from source)
+2026-07-06T07:30:54Z,fetch_prices_ticker,failed,0,HAS: insufficient data (empty response from source)
+2026-07-06T07:30:55Z,fetch_prices_ticker,failed,0,HCA: insufficient data (empty response from source)
+2026-07-06T07:30:55Z,fetch_prices_ticker,failed,0,DOC: insufficient data (empty response from source)
+2026-07-06T07:30:56Z,fetch_prices_ticker,failed,0,HSIC: insufficient data (empty response from source)
+2026-07-06T07:30:56Z,fetch_prices_ticker,failed,0,HSY: insufficient data (empty response from source)
+2026-07-06T07:30:57Z,fetch_prices_ticker,failed,0,HPE: insufficient data (empty response from source)
+2026-07-06T07:30:57Z,fetch_prices_ticker,failed,0,HLT: insufficient data (empty response from source)
+2026-07-06T07:30:58Z,fetch_prices_ticker,failed,0,HONA: insufficient data (empty response from source)
+2026-07-06T07:30:58Z,fetch_prices_ticker,failed,0,HON: insufficient data (empty response from source)
+2026-07-06T07:30:59Z,fetch_prices_ticker,failed,0,HRL: insufficient data (empty response from source)
+2026-07-06T07:30:59Z,fetch_prices_ticker,failed,0,HST: insufficient data (empty response from source)
+2026-07-06T07:31:00Z,fetch_prices_ticker,failed,0,HWM: insufficient data (empty response from source)
+2026-07-06T07:31:00Z,fetch_prices_ticker,failed,0,HPQ: insufficient data (empty response from source)
+2026-07-06T07:31:01Z,fetch_prices_ticker,failed,0,HUBB: insufficient data (empty response from source)
+2026-07-06T07:31:01Z,fetch_prices_ticker,failed,0,HUM: insufficient data (empty response from source)
+2026-07-06T07:31:02Z,fetch_prices_ticker,failed,0,HBAN: insufficient data (empty response from source)
+2026-07-06T07:31:02Z,fetch_prices_ticker,failed,0,HII: insufficient data (empty response from source)
+2026-07-06T07:31:03Z,fetch_prices_ticker,failed,0,IEX: insufficient data (empty response from source)
+2026-07-06T07:31:03Z,fetch_prices_ticker,failed,0,IDXX: insufficient data (empty response from source)
+2026-07-06T07:31:04Z,fetch_prices_ticker,failed,0,ITW: insufficient data (empty response from source)
+2026-07-06T07:31:04Z,fetch_prices_ticker,failed,0,INCY: insufficient data (empty response from source)
+2026-07-06T07:31:05Z,fetch_prices_ticker,failed,0,IR: insufficient data (empty response from source)
+2026-07-06T07:31:05Z,fetch_prices_ticker,failed,0,PODD: insufficient data (empty response from source)
+2026-07-06T07:31:06Z,fetch_prices_ticker,failed,0,IBKR: insufficient data (empty response from source)
+2026-07-06T07:31:06Z,fetch_prices_ticker,failed,0,ICE: insufficient data (empty response from source)
+2026-07-06T07:31:07Z,fetch_prices_ticker,failed,0,IFF: insufficient data (empty response from source)
+2026-07-06T07:31:07Z,fetch_prices_ticker,failed,0,IP: insufficient data (empty response from source)
+2026-07-06T07:31:08Z,fetch_prices_ticker,failed,0,ISRG: insufficient data (empty response from source)
+2026-07-06T07:31:08Z,fetch_prices_ticker,failed,0,IVZ: insufficient data (empty response from source)
+2026-07-06T07:31:09Z,fetch_prices_ticker,failed,0,INVH: insufficient data (empty response from source)
+2026-07-06T07:31:09Z,fetch_prices_ticker,failed,0,IQV: insufficient data (empty response from source)
+2026-07-06T07:31:10Z,fetch_prices_ticker,failed,0,IRM: insufficient data (empty response from source)
+2026-07-06T07:31:10Z,fetch_prices_ticker,failed,0,JBHT: insufficient data (empty response from source)
+2026-07-06T07:31:11Z,fetch_prices_ticker,failed,0,JBL: insufficient data (empty response from source)
+2026-07-06T07:31:11Z,fetch_prices_ticker,failed,0,JKHY: insufficient data (empty response from source)
+2026-07-06T07:31:12Z,fetch_prices_ticker,failed,0,J: insufficient data (empty response from source)
+2026-07-06T07:31:12Z,fetch_prices_ticker,failed,0,JCI: insufficient data (empty response from source)
+2026-07-06T07:31:13Z,fetch_prices_ticker,failed,0,KVUE: insufficient data (empty response from source)
+2026-07-06T07:31:13Z,fetch_prices_ticker,failed,0,KDP: insufficient data (empty response from source)
+2026-07-06T07:31:14Z,fetch_prices_ticker,failed,0,KEY: insufficient data (empty response from source)
+2026-07-06T07:31:14Z,fetch_prices_ticker,failed,0,KEYS: insufficient data (empty response from source)
+2026-07-06T07:31:15Z,fetch_prices_ticker,failed,0,KMB: insufficient data (empty response from source)
+2026-07-06T07:31:15Z,fetch_prices_ticker,failed,0,KIM: insufficient data (empty response from source)
+2026-07-06T07:31:16Z,fetch_prices_ticker,failed,0,KMI: insufficient data (empty response from source)
+2026-07-06T07:31:16Z,fetch_prices_ticker,failed,0,KKR: insufficient data (empty response from source)
+2026-07-06T07:31:17Z,fetch_prices_ticker,failed,0,KLAC: insufficient data (empty response from source)
+2026-07-06T07:31:17Z,fetch_prices_ticker,failed,0,KHC: insufficient data (empty response from source)
+2026-07-06T07:31:18Z,fetch_prices_ticker,failed,0,KR: insufficient data (empty response from source)
+2026-07-06T07:31:18Z,fetch_prices_ticker,failed,0,LHX: insufficient data (empty response from source)
+2026-07-06T07:31:19Z,fetch_prices_ticker,failed,0,LH: insufficient data (empty response from source)
+2026-07-06T07:31:19Z,fetch_prices_ticker,failed,0,LRCX: insufficient data (empty response from source)
+2026-07-06T07:31:20Z,fetch_prices_ticker,failed,0,LVS: insufficient data (empty response from source)
+2026-07-06T07:31:20Z,fetch_prices_ticker,failed,0,LDOS: insufficient data (empty response from source)
+2026-07-06T07:31:21Z,fetch_prices_ticker,failed,0,LEN: insufficient data (empty response from source)
+2026-07-06T07:31:21Z,fetch_prices_ticker,failed,0,LII: insufficient data (empty response from source)
+2026-07-06T07:31:22Z,fetch_prices_ticker,failed,0,LYV: insufficient data (empty response from source)
+2026-07-06T07:31:22Z,fetch_prices_ticker,failed,0,LMT: insufficient data (empty response from source)
+2026-07-06T07:31:23Z,fetch_prices_ticker,failed,0,L: insufficient data (empty response from source)
+2026-07-06T07:31:23Z,fetch_prices_ticker,failed,0,LOW: insufficient data (empty response from source)
+2026-07-06T07:31:24Z,fetch_prices_ticker,failed,0,LULU: insufficient data (empty response from source)
+2026-07-06T07:31:24Z,fetch_prices_ticker,failed,0,LITE: insufficient data (empty response from source)
+2026-07-06T07:31:25Z,fetch_prices_ticker,failed,0,LYB: insufficient data (empty response from source)
+2026-07-06T07:31:25Z,fetch_prices_ticker,failed,0,MTB: insufficient data (empty response from source)
+2026-07-06T07:31:26Z,fetch_prices_ticker,failed,0,MPC: insufficient data (empty response from source)
+2026-07-06T07:31:26Z,fetch_prices_ticker,failed,0,MAR: insufficient data (empty response from source)
+2026-07-06T07:31:27Z,fetch_prices_ticker,failed,0,MRSH: insufficient data (empty response from source)
+2026-07-06T07:31:27Z,fetch_prices_ticker,failed,0,MLM: insufficient data (empty response from source)
+2026-07-06T07:31:28Z,fetch_prices_ticker,failed,0,MRVL: insufficient data (empty response from source)
+2026-07-06T07:31:28Z,fetch_prices_ticker,failed,0,MAS: insufficient data (empty response from source)
+2026-07-06T07:31:29Z,fetch_prices_ticker,failed,0,MKC: insufficient data (empty response from source)
+2026-07-06T07:31:29Z,fetch_prices_ticker,failed,0,MCK: insufficient data (empty response from source)
+2026-07-06T07:31:30Z,fetch_prices_ticker,failed,0,MDT: insufficient data (empty response from source)
+2026-07-06T07:31:30Z,fetch_prices_ticker,failed,0,MET: insufficient data (empty response from source)
+2026-07-06T07:31:31Z,fetch_prices_ticker,failed,0,MTD: insufficient data (empty response from source)
+2026-07-06T07:31:31Z,fetch_prices_ticker,failed,0,MGM: insufficient data (empty response from source)
+2026-07-06T07:31:32Z,fetch_prices_ticker,failed,0,MCHP: insufficient data (empty response from source)
+2026-07-06T07:31:32Z,fetch_prices_ticker,failed,0,MU: insufficient data (empty response from source)
+2026-07-06T07:31:33Z,fetch_prices_ticker,failed,0,MAA: insufficient data (empty response from source)
+2026-07-06T07:31:33Z,fetch_prices_ticker,failed,0,MRNA: insufficient data (empty response from source)
+2026-07-06T07:31:34Z,fetch_prices_ticker,failed,0,TAP: insufficient data (empty response from source)
+2026-07-06T07:31:34Z,fetch_prices_ticker,failed,0,MDLZ: insufficient data (empty response from source)
+2026-07-06T07:31:35Z,fetch_prices_ticker,failed,0,MPWR: insufficient data (empty response from source)
+2026-07-06T07:31:35Z,fetch_prices_ticker,failed,0,MNST: insufficient data (empty response from source)
+2026-07-06T07:31:36Z,fetch_prices_ticker,failed,0,MCO: insufficient data (empty response from source)
+2026-07-06T07:31:36Z,fetch_prices_ticker,failed,0,MS: insufficient data (empty response from source)
+2026-07-06T07:31:37Z,fetch_prices_ticker,failed,0,MOS: insufficient data (empty response from source)
+2026-07-06T07:31:37Z,fetch_prices_ticker,failed,0,MSI: insufficient data (empty response from source)
+2026-07-06T07:31:38Z,fetch_prices_ticker,failed,0,MSCI: insufficient data (empty response from source)
+2026-07-06T07:31:38Z,fetch_prices_ticker,failed,0,NDAQ: insufficient data (empty response from source)
+2026-07-06T07:31:39Z,fetch_prices_ticker,failed,0,NTAP: insufficient data (empty response from source)
+2026-07-06T07:31:40Z,fetch_prices_ticker,failed,0,NEM: insufficient data (empty response from source)
+2026-07-06T07:31:40Z,fetch_prices_ticker,failed,0,NWSA: insufficient data (empty response from source)
+2026-07-06T07:31:41Z,fetch_prices_ticker,failed,0,NWS: insufficient data (empty response from source)
+2026-07-06T07:31:41Z,fetch_prices_ticker,failed,0,NEE: insufficient data (empty response from source)
+2026-07-06T07:31:42Z,fetch_prices_ticker,failed,0,NI: insufficient data (empty response from source)
+2026-07-06T07:31:42Z,fetch_prices_ticker,failed,0,NDSN: insufficient data (empty response from source)
+2026-07-06T07:31:43Z,fetch_prices_ticker,failed,0,NSC: insufficient data (empty response from source)
+2026-07-06T07:31:43Z,fetch_prices_ticker,failed,0,NTRS: insufficient data (empty response from source)
+2026-07-06T07:31:44Z,fetch_prices_ticker,failed,0,NOC: insufficient data (empty response from source)
+2026-07-06T07:31:44Z,fetch_prices_ticker,failed,0,NCLH: insufficient data (empty response from source)
+2026-07-06T07:31:45Z,fetch_prices_ticker,failed,0,NRG: insufficient data (empty response from source)
+2026-07-06T07:31:45Z,fetch_prices_ticker,failed,0,NUE: insufficient data (empty response from source)
+2026-07-06T07:31:46Z,fetch_prices_ticker,failed,0,NVR: insufficient data (empty response from source)
+2026-07-06T07:31:46Z,fetch_prices_ticker,failed,0,NXPI: insufficient data (empty response from source)
+2026-07-06T07:31:47Z,fetch_prices_ticker,failed,0,ORLY: insufficient data (empty response from source)
+2026-07-06T07:31:47Z,fetch_prices_ticker,failed,0,OXY: insufficient data (empty response from source)
+2026-07-06T07:31:48Z,fetch_prices_ticker,failed,0,ODFL: insufficient data (empty response from source)
+2026-07-06T07:31:48Z,fetch_prices_ticker,failed,0,OMC: insufficient data (empty response from source)
+2026-07-06T07:31:49Z,fetch_prices_ticker,failed,0,ON: insufficient data (empty response from source)
+2026-07-06T07:31:49Z,fetch_prices_ticker,failed,0,OKE: insufficient data (empty response from source)
+2026-07-06T07:31:50Z,fetch_prices_ticker,failed,0,ORCL: insufficient data (empty response from source)
+2026-07-06T07:31:50Z,fetch_prices_ticker,failed,0,OTIS: insufficient data (empty response from source)
+2026-07-06T07:31:51Z,fetch_prices_ticker,failed,0,PCAR: insufficient data (empty response from source)
+2026-07-06T07:31:51Z,fetch_prices_ticker,failed,0,PKG: insufficient data (empty response from source)
+2026-07-06T07:31:52Z,fetch_prices_ticker,failed,0,PLTR: insufficient data (empty response from source)
+2026-07-06T07:31:52Z,fetch_prices_ticker,failed,0,PANW: insufficient data (empty response from source)
+2026-07-06T07:31:53Z,fetch_prices_ticker,failed,0,PSKY: insufficient data (empty response from source)
+2026-07-06T07:31:53Z,fetch_prices_ticker,failed,0,PH: insufficient data (empty response from source)
+2026-07-06T07:31:54Z,fetch_prices_ticker,failed,0,PAYX: insufficient data (empty response from source)
+2026-07-06T07:31:54Z,fetch_prices_ticker,failed,0,PYPL: insufficient data (empty response from source)
+2026-07-06T07:31:55Z,fetch_prices_ticker,failed,0,PNR: insufficient data (empty response from source)
+2026-07-06T07:31:55Z,fetch_prices_ticker,failed,0,PFE: insufficient data (empty response from source)
+2026-07-06T07:31:56Z,fetch_prices_ticker,failed,0,PCG: insufficient data (empty response from source)
+2026-07-06T07:31:56Z,fetch_prices_ticker,failed,0,PSX: insufficient data (empty response from source)
+2026-07-06T07:31:57Z,fetch_prices_ticker,failed,0,PNW: insufficient data (empty response from source)
+2026-07-06T07:31:57Z,fetch_prices_ticker,failed,0,PNC: insufficient data (empty response from source)
+2026-07-06T07:31:58Z,fetch_prices_ticker,failed,0,PPG: insufficient data (empty response from source)
+2026-07-06T07:31:58Z,fetch_prices_ticker,failed,0,PPL: insufficient data (empty response from source)
+2026-07-06T07:31:59Z,fetch_prices_ticker,failed,0,PFG: insufficient data (empty response from source)
+2026-07-06T07:31:59Z,fetch_prices_ticker,failed,0,PGR: insufficient data (empty response from source)
+2026-07-06T07:32:00Z,fetch_prices_ticker,failed,0,PLD: insufficient data (empty response from source)
+2026-07-06T07:32:00Z,fetch_prices_ticker,failed,0,PRU: insufficient data (empty response from source)
+2026-07-06T07:32:01Z,fetch_prices_ticker,failed,0,PEG: insufficient data (empty response from source)
+2026-07-06T07:32:01Z,fetch_prices_ticker,failed,0,PTC: insufficient data (empty response from source)
+2026-07-06T07:32:02Z,fetch_prices_ticker,failed,0,PSA: insufficient data (empty response from source)
+2026-07-06T07:32:02Z,fetch_prices_ticker,failed,0,PHM: insufficient data (empty response from source)
+2026-07-06T07:32:03Z,fetch_prices_ticker,failed,0,PWR: insufficient data (empty response from source)
+2026-07-06T07:32:03Z,fetch_prices_ticker,failed,0,DGX: insufficient data (empty response from source)
+2026-07-06T07:32:04Z,fetch_prices_ticker,failed,0,Q: insufficient data (empty response from source)
+2026-07-06T07:32:04Z,fetch_prices_ticker,failed,0,RL: insufficient data (empty response from source)
+2026-07-06T07:32:05Z,fetch_prices_ticker,failed,0,RJF: insufficient data (empty response from source)
+2026-07-06T07:32:05Z,fetch_prices_ticker,failed,0,RTX: insufficient data (empty response from source)
+2026-07-06T07:32:06Z,fetch_prices_ticker,failed,0,O: insufficient data (empty response from source)
+2026-07-06T07:32:06Z,fetch_prices_ticker,failed,0,REG: insufficient data (empty response from source)
+2026-07-06T07:32:07Z,fetch_prices_ticker,failed,0,REGN: insufficient data (empty response from source)
+2026-07-06T07:32:07Z,fetch_prices_ticker,failed,0,RF: insufficient data (empty response from source)
+2026-07-06T07:32:08Z,fetch_prices_ticker,failed,0,RSG: insufficient data (empty response from source)
+2026-07-06T07:32:08Z,fetch_prices_ticker,failed,0,RMD: insufficient data (empty response from source)
+2026-07-06T07:32:09Z,fetch_prices_ticker,failed,0,RVTY: insufficient data (empty response from source)
+2026-07-06T07:32:09Z,fetch_prices_ticker,failed,0,HOOD: insufficient data (empty response from source)
+2026-07-06T07:32:10Z,fetch_prices_ticker,failed,0,ROK: insufficient data (empty response from source)
+2026-07-06T07:32:10Z,fetch_prices_ticker,failed,0,ROL: insufficient data (empty response from source)
+2026-07-06T07:32:11Z,fetch_prices_ticker,failed,0,ROP: insufficient data (empty response from source)
+2026-07-06T07:32:11Z,fetch_prices_ticker,failed,0,ROST: insufficient data (empty response from source)
+2026-07-06T07:32:12Z,fetch_prices_ticker,failed,0,RCL: insufficient data (empty response from source)
+2026-07-06T07:32:12Z,fetch_prices_ticker,failed,0,SPGI: insufficient data (empty response from source)
+2026-07-06T07:32:13Z,fetch_prices_ticker,failed,0,SNDK: insufficient data (empty response from source)
+2026-07-06T07:32:13Z,fetch_prices_ticker,failed,0,SBAC: insufficient data (empty response from source)
+2026-07-06T07:32:14Z,fetch_prices_ticker,failed,0,SLB: insufficient data (empty response from source)
+2026-07-06T07:32:14Z,fetch_prices_ticker,failed,0,STX: insufficient data (empty response from source)
+2026-07-06T07:32:17Z,fetch_prices_ticker,failed,0,SRE: insufficient data (empty response from source)
+2026-07-06T07:32:18Z,fetch_prices_ticker,failed,0,SHW: insufficient data (empty response from source)
+2026-07-06T07:32:18Z,fetch_prices_ticker,failed,0,SPG: insufficient data (empty response from source)
+2026-07-06T07:32:18Z,fetch_prices_ticker,failed,0,SWKS: insufficient data (empty response from source)
+2026-07-06T07:32:19Z,fetch_prices_ticker,failed,0,SJM: insufficient data (empty response from source)
+2026-07-06T07:32:19Z,fetch_prices_ticker,failed,0,SW: insufficient data (empty response from source)
+2026-07-06T07:32:20Z,fetch_prices_ticker,failed,0,SNA: insufficient data (empty response from source)
+2026-07-06T07:32:21Z,fetch_prices_ticker,failed,0,SOLV: insufficient data (empty response from source)
+2026-07-06T07:32:22Z,fetch_prices_ticker,failed,0,SO: insufficient data (empty response from source)
+2026-07-06T07:32:22Z,fetch_prices_ticker,failed,0,LUV: insufficient data (empty response from source)
+2026-07-06T07:32:23Z,fetch_prices_ticker,failed,0,SWK: insufficient data (empty response from source)
+2026-07-06T07:32:23Z,fetch_prices_ticker,failed,0,SBUX: insufficient data (empty response from source)
+2026-07-06T07:32:24Z,fetch_prices_ticker,failed,0,STT: insufficient data (empty response from source)
+2026-07-06T07:32:24Z,fetch_prices_ticker,failed,0,STLD: insufficient data (empty response from source)
+2026-07-06T07:32:25Z,fetch_prices_ticker,failed,0,STE: insufficient data (empty response from source)
+2026-07-06T07:32:25Z,fetch_prices_ticker,failed,0,SYK: insufficient data (empty response from source)
+2026-07-06T07:32:26Z,fetch_prices_ticker,failed,0,SMCI: insufficient data (empty response from source)
+2026-07-06T07:32:26Z,fetch_prices_ticker,failed,0,SYF: insufficient data (empty response from source)
+2026-07-06T07:32:27Z,fetch_prices_ticker,failed,0,SNPS: insufficient data (empty response from source)
+2026-07-06T07:32:27Z,fetch_prices_ticker,failed,0,SYY: insufficient data (empty response from source)
+2026-07-06T07:32:28Z,fetch_prices_ticker,failed,0,TMUS: insufficient data (empty response from source)
+2026-07-06T07:32:28Z,fetch_prices_ticker,failed,0,TROW: insufficient data (empty response from source)
+2026-07-06T07:32:29Z,fetch_prices_ticker,failed,0,TTWO: insufficient data (empty response from source)
+2026-07-06T07:32:29Z,fetch_prices_ticker,failed,0,TPR: insufficient data (empty response from source)
+2026-07-06T07:32:30Z,fetch_prices_ticker,failed,0,TRGP: insufficient data (empty response from source)
+2026-07-06T07:32:30Z,fetch_prices_ticker,failed,0,TGT: insufficient data (empty response from source)
+2026-07-06T07:32:31Z,fetch_prices_ticker,failed,0,TEL: insufficient data (empty response from source)
+2026-07-06T07:32:31Z,fetch_prices_ticker,failed,0,TDY: insufficient data (empty response from source)
+2026-07-06T07:32:32Z,fetch_prices_ticker,failed,0,TER: insufficient data (empty response from source)
+2026-07-06T07:32:32Z,fetch_prices_ticker,failed,0,TPL: insufficient data (empty response from source)
+2026-07-06T07:32:33Z,fetch_prices_ticker,failed,0,TXT: insufficient data (empty response from source)
+2026-07-06T07:32:33Z,fetch_prices_ticker,failed,0,TJX: insufficient data (empty response from source)
+2026-07-06T07:32:34Z,fetch_prices_ticker,failed,0,TKO: insufficient data (empty response from source)
+2026-07-06T07:32:34Z,fetch_prices_ticker,failed,0,TTD: insufficient data (empty response from source)
+2026-07-06T07:32:35Z,fetch_prices_ticker,failed,0,TSCO: insufficient data (empty response from source)
+2026-07-06T07:32:35Z,fetch_prices_ticker,failed,0,TT: insufficient data (empty response from source)
+2026-07-06T07:32:36Z,fetch_prices_ticker,failed,0,TDG: insufficient data (empty response from source)
+2026-07-06T07:32:37Z,fetch_prices_ticker,failed,0,TRV: insufficient data (empty response from source)
+2026-07-06T07:32:37Z,fetch_prices_ticker,failed,0,TRMB: insufficient data (empty response from source)
+2026-07-06T07:32:37Z,fetch_prices_ticker,failed,0,TFC: insufficient data (empty response from source)
+2026-07-06T07:32:38Z,fetch_prices_ticker,failed,0,TYL: insufficient data (empty response from source)
+2026-07-06T07:32:38Z,fetch_prices_ticker,failed,0,TSN: insufficient data (empty response from source)
+2026-07-06T07:32:39Z,fetch_prices_ticker,failed,0,USB: insufficient data (empty response from source)
+2026-07-06T07:32:39Z,fetch_prices_ticker,failed,0,UBER: insufficient data (empty response from source)
+2026-07-06T07:32:40Z,fetch_prices_ticker,failed,0,UDR: insufficient data (empty response from source)
+2026-07-06T07:32:40Z,fetch_prices_ticker,failed,0,ULTA: insufficient data (empty response from source)
+2026-07-06T07:32:41Z,fetch_prices_ticker,failed,0,UNP: insufficient data (empty response from source)
+2026-07-06T07:32:41Z,fetch_prices_ticker,failed,0,UAL: insufficient data (empty response from source)
+2026-07-06T07:32:42Z,fetch_prices_ticker,failed,0,UPS: insufficient data (empty response from source)
+2026-07-06T07:32:42Z,fetch_prices_ticker,failed,0,URI: insufficient data (empty response from source)
+2026-07-06T07:32:43Z,fetch_prices_ticker,failed,0,UHS: insufficient data (empty response from source)
+2026-07-06T07:32:43Z,fetch_prices_ticker,failed,0,VLO: insufficient data (empty response from source)
+2026-07-06T07:32:44Z,fetch_prices_ticker,failed,0,VEEV: insufficient data (empty response from source)
+2026-07-06T07:32:44Z,fetch_prices_ticker,failed,0,VTR: insufficient data (empty response from source)
+2026-07-06T07:32:45Z,fetch_prices_ticker,failed,0,VLTO: insufficient data (empty response from source)
+2026-07-06T07:32:45Z,fetch_prices_ticker,failed,0,VRSN: insufficient data (empty response from source)
+2026-07-06T07:32:46Z,fetch_prices_ticker,failed,0,VRSK: insufficient data (empty response from source)
+2026-07-06T07:32:46Z,fetch_prices_ticker,failed,0,VRTX: insufficient data (empty response from source)
+2026-07-06T07:32:47Z,fetch_prices_ticker,failed,0,VRT: insufficient data (empty response from source)
+2026-07-06T07:32:47Z,fetch_prices_ticker,failed,0,VTRS: insufficient data (empty response from source)
+2026-07-06T07:32:48Z,fetch_prices_ticker,failed,0,VICI: insufficient data (empty response from source)
+2026-07-06T07:32:48Z,fetch_prices_ticker,failed,0,VST: insufficient data (empty response from source)
+2026-07-06T07:32:49Z,fetch_prices_ticker,failed,0,VMC: insufficient data (empty response from source)
+2026-07-06T07:32:49Z,fetch_prices_ticker,failed,0,WRB: insufficient data (empty response from source)
+2026-07-06T07:32:50Z,fetch_prices_ticker,failed,0,GWW: insufficient data (empty response from source)
+2026-07-06T07:32:50Z,fetch_prices_ticker,failed,0,WAB: insufficient data (empty response from source)
+2026-07-06T07:32:51Z,fetch_prices_ticker,failed,0,WBD: insufficient data (empty response from source)
+2026-07-06T07:32:51Z,fetch_prices_ticker,failed,0,WM: insufficient data (empty response from source)
+2026-07-06T07:32:52Z,fetch_prices_ticker,failed,0,WAT: insufficient data (empty response from source)
+2026-07-06T07:32:52Z,fetch_prices_ticker,failed,0,WEC: insufficient data (empty response from source)
+2026-07-06T07:32:53Z,fetch_prices_ticker,failed,0,WELL: insufficient data (empty response from source)
+2026-07-06T07:32:54Z,fetch_prices_ticker,failed,0,WST: insufficient data (empty response from source)
+2026-07-06T07:32:54Z,fetch_prices_ticker,failed,0,WDC: insufficient data (empty response from source)
+2026-07-06T07:32:54Z,fetch_prices_ticker,failed,0,WY: insufficient data (empty response from source)
+2026-07-06T07:32:55Z,fetch_prices_ticker,failed,0,WSM: insufficient data (empty response from source)
+2026-07-06T07:32:55Z,fetch_prices_ticker,failed,0,WMB: insufficient data (empty response from source)
+2026-07-06T07:32:56Z,fetch_prices_ticker,failed,0,WTW: insufficient data (empty response from source)
+2026-07-06T07:32:56Z,fetch_prices_ticker,failed,0,WDAY: insufficient data (empty response from source)
+2026-07-06T07:32:57Z,fetch_prices_ticker,failed,0,WYNN: insufficient data (empty response from source)
+2026-07-06T07:32:57Z,fetch_prices_ticker,failed,0,XEL: insufficient data (empty response from source)
+2026-07-06T07:32:58Z,fetch_prices_ticker,failed,0,XYL: insufficient data (empty response from source)
+2026-07-06T07:32:58Z,fetch_prices_ticker,failed,0,YUM: insufficient data (empty response from source)
+2026-07-06T07:32:59Z,fetch_prices_ticker,failed,0,ZBRA: insufficient data (empty response from source)
+2026-07-06T07:32:59Z,fetch_prices_ticker,failed,0,ZBH: insufficient data (empty response from source)
+2026-07-06T07:33:00Z,fetch_prices_ticker,failed,0,ZTS: insufficient data (empty response from source)
+2026-07-06T07:33:00Z,fetch_prices,failed,0,"0/503 tickers, 0 rows, 503 failed"
+2026-07-06T07:50:37Z,run_start,success,0,INCREMENTAL UPDATE (--only prices)
+2026-07-06T07:50:38Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-07-06T07:51:06Z,fetch_prices_ticker,failed,0,ADI: insufficient data (no rows)
+2026-07-06T07:52:03Z,fetch_prices,partial,502,"502/503 tickers, 249058 rows, 1 failed"
+2026-07-06T07:52:03Z,run_end,success,503,INCREMENTAL UPDATE (--only prices)
+2026-07-06T07:52:04Z,run_start,success,0,"INCREMENTAL UPDATE (--only ic,sentiment,trends_factor)"
+2026-07-06T07:52:04Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-07-06T07:52:04Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-07-06T07:52:06Z,sentiment,success,2017,2017 filings scored (full_LM=False)
+2026-07-06T07:52:06Z,trends_factor,success,0,0 weekly factor rows
+2026-07-06T07:52:07Z,compute_ic,success,1994,1994 aligned filings; IC per horizon computed
+2026-07-06T07:52:07Z,run_end,success,503,"INCREMENTAL UPDATE (--only ic,sentiment,trends_factor)"
+2026-07-06T08:07:43Z,run_start,success,0,INCREMENTAL UPDATE (--only trends)
+2026-07-06T08:07:43Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-07-06T08:07:47Z,fetch_trends_ticker,failed,0,AAPL: The request failed: Google returned a response with code 429
+2026-07-06T08:07:53Z,fetch_trends_ticker,failed,0,MSFT: The request failed: Google returned a response with code 429
+2026-07-06T08:07:59Z,fetch_trends_ticker,failed,0,AMZN: The request failed: Google returned a response with code 429
+2026-07-06T08:08:06Z,fetch_trends_ticker,failed,0,NVDA: The request failed: Google returned a response with code 429
+2026-07-06T08:08:12Z,fetch_trends_ticker,failed,0,GOOGL: The request failed: Google returned a response with code 429
+2026-07-06T08:08:18Z,fetch_trends_ticker,failed,0,META: The request failed: Google returned a response with code 429
+2026-07-06T08:08:25Z,fetch_trends_ticker,failed,0,TSLA: The request failed: Google returned a response with code 429
+2026-07-06T08:08:31Z,fetch_trends_ticker,failed,0,BRK-B: The request failed: Google returned a response with code 429
+2026-07-06T08:08:37Z,fetch_trends_ticker,failed,0,JPM: The request failed: Google returned a response with code 429
+2026-07-06T08:08:44Z,fetch_trends_ticker,failed,0,V: The request failed: Google returned a response with code 429
+2026-07-06T08:08:50Z,fetch_trends_ticker,failed,0,UNH: The request failed: Google returned a response with code 429
+2026-07-06T08:09:29Z,fetch_trends_ticker,failed,0,ABBV: The request failed: Google returned a response with code 429
+2026-07-06T08:09:36Z,fetch_trends_ticker,failed,0,COST: The request failed: Google returned a response with code 429
+2026-07-06T08:10:29Z,fetch_trends_ticker,failed,0,INTC: The request failed: Google returned a response with code 429
+2026-07-06T08:10:46Z,fetch_trends_ticker,failed,0,WFC: The request failed: Google returned a response with code 429
+2026-07-06T08:10:53Z,fetch_trends_ticker,failed,0,QCOM: The request failed: Google returned a response with code 429
+2026-07-06T08:10:59Z,fetch_trends_ticker,failed,0,TXN: The request failed: Google returned a response with code 429
+2026-07-06T08:11:06Z,fetch_trends_ticker,failed,0,PM: The request failed: Google returned a response with code 429
+2026-07-06T08:11:12Z,fetch_trends_ticker,failed,0,DHR: The request failed: Google returned a response with code 429
+2026-07-06T08:11:19Z,fetch_trends_ticker,failed,0,VZ: The request failed: Google returned a response with code 429
+2026-07-06T08:11:25Z,fetch_trends_ticker,failed,0,CAT: The request failed: Google returned a response with code 429
+2026-07-06T08:11:32Z,fetch_trends_ticker,failed,0,INTU: The request failed: Google returned a response with code 429
+2026-07-06T08:11:48Z,fetch_trends_ticker,failed,0,GE: The request failed: Google returned a response with code 429
+2026-07-06T08:11:54Z,fetch_trends_ticker,failed,0,MMM: The request failed: Google returned a response with code 429
+2026-07-06T08:12:04Z,fetch_trends_ticker,failed,0,AES: The request failed: Google returned a response with code 429
+2026-07-06T08:12:17Z,fetch_trends_ticker,failed,0,APD: The request failed: Google returned a response with code 429
+2026-07-06T08:12:49Z,fetch_trends_ticker,failed,0,ALL: The request failed: Google returned a response with code 429
+2026-07-06T08:13:10Z,fetch_trends_ticker,failed,0,AEP: The request failed: Google returned a response with code 429
+2026-07-06T08:13:47Z,run_start,success,0,INCREMENTAL UPDATE
+2026-07-06T08:13:48Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-08-17T02:02:02Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-17T02:02:04Z,build_universe,success,502,"503 names, 502 CIKs resolved"
+2026-08-17T02:03:09Z,fetch_prices,success,503,"503/503 tickers, 249183 rows, 0 failed"
+2026-08-17T02:04:17Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-17T02:19:22Z,fetch_8k,partial,3560,"3560 8-Ks since 2026-02-15, 1 tickers failed"
+2026-08-17T02:19:33Z,fetch_trends_ticker,failed,0,MSFT: The request failed: Google returned a response with code 429
+2026-08-17T02:24:37Z,fetch_trends,partial,39,39 new this run; 46/503 total saved; 1 failed
+2026-08-17T02:24:37Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-08-17T02:24:40Z,sentiment,success,3566,3566 filings scored (full_LM=False)
+2026-08-17T02:24:40Z,trends_factor,success,4420,4420 weekly factor rows
+2026-08-17T02:24:41Z,compute_ic,success,3531,3531 aligned filings; IC per horizon computed
+2026-08-17T02:24:41Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-17T10:00:03Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-17T10:00:05Z,build_universe,success,502,"503 names, 502 CIKs resolved"
+2026-08-17T10:00:43Z,fetch_prices_ticker,failed,0,UHS: insufficient data (no rows)
+2026-08-17T10:00:43Z,fetch_prices_ticker,failed,0,VRSN: insufficient data (no rows)
+2026-08-17T10:00:43Z,fetch_prices_ticker,failed,0,VST: insufficient data (no rows)
+2026-08-17T10:00:43Z,fetch_prices_ticker,failed,0,XYL: insufficient data (no rows)
+2026-08-17T10:00:44Z,fetch_prices,partial,499,"499/503 tickers, 247187 rows, 4 failed"
+2026-08-17T10:01:16Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-17T11:10:41Z,fetch_8k_ticker,failed,0,"KKR: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0001404912.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-17T11:12:38Z,fetch_8k_ticker,failed,0,"KLAC: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000319201.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-17T11:14:43Z,fetch_8k_ticker,failed,0,"KHC: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0001637459.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-17T11:16:43Z,fetch_8k_ticker,failed,0,"KR: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000056873.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-17T11:18:49Z,fetch_8k_ticker,failed,0,"LHX: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000202058.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-17T11:37:59Z,fetch_8k_ticker,failed,0,"LH: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000920148.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-17T11:49:08Z,fetch_8k,partial,3521,"3521 8-Ks since 2026-02-15, 7 tickers failed"
+2026-08-17T11:50:27Z,fetch_trends_ticker,failed,0,"ATO: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Atmos+Energy%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property"
+2026-08-17T11:50:32Z,fetch_trends_ticker,failed,0,"ADSK: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Autodesk%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22"
+2026-08-17T11:50:37Z,fetch_trends_ticker,failed,0,"ADP: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Automatic+Data+Processing%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2"
+2026-08-17T11:50:43Z,fetch_trends_ticker,failed,0,"AZO: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22AutoZone%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%"
+2026-08-17T11:50:48Z,fetch_trends_ticker,failed,0,"AVB: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22AvalonBay+Communities%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%2"
+2026-08-17T11:50:53Z,fetch_trends_ticker,failed,0,"AVY: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Avery+Dennison%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22proper"
+2026-08-17T12:02:39Z,fetch_trends_ticker,failed,0,"AXON: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Axon+Enterprise%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22prop"
+2026-08-17T12:04:31Z,fetch_trends_ticker,failed,0,"TECH: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bio-Techne%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%"
+2026-08-17T12:04:36Z,fetch_trends_ticker,failed,0,"BIIB: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Biogen%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3"
+2026-08-17T12:04:41Z,fetch_trends_ticker,failed,0,"BLK: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22BlackRock%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22"
+2026-08-17T12:04:46Z,fetch_trends_ticker,failed,0,"BX: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Blackstone+Inc.%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22proper"
+2026-08-17T12:04:52Z,fetch_trends_ticker,failed,0,"XYZ: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Block%2C+Inc.%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22propert"
+2026-08-17T12:04:57Z,fetch_trends_ticker,failed,0,"BNY: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22BNY+Mellon%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%2"
+2026-08-17T12:05:02Z,fetch_trends_ticker,failed,0,"BA: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Boeing%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3A+"
+2026-08-17T12:06:48Z,fetch_trends_ticker,failed,0,"BKNG: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Booking+Holdings%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22pro"
+2026-08-17T12:06:53Z,fetch_trends_ticker,failed,0,"BSX: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Boston+Scientific%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22pro"
+2026-08-17T12:06:58Z,fetch_trends_ticker,failed,0,"BMY: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bristol+Myers+Squibb%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22"
+2026-08-17T12:07:03Z,fetch_trends_ticker,failed,0,"BR: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Broadridge+Financial+Solutions%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A"
+2026-08-17T12:07:08Z,fetch_trends_ticker,failed,0,"BRO: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Brown+%26+Brown%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22prope"
+2026-08-17T12:07:14Z,fetch_trends_ticker,failed,0,"BF-B: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Brown%5Cu2013Forman%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22"
+2026-08-17T12:07:19Z,fetch_trends_ticker,failed,0,"BLDR: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Builders+FirstSource%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%2"
+2026-08-17T12:07:24Z,fetch_trends_ticker,failed,0,"BG: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Bunge+Global%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%"
+2026-08-17T12:07:29Z,fetch_trends_ticker,failed,0,"BXP: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22BXP%2C+Inc.%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%"
+2026-08-17T12:38:18Z,fetch_trends_ticker,failed,0,"CHRW: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out."
+2026-08-17T13:04:13Z,fetch_trends_ticker,failed,0,CPT: The request failed: Google returned a response with code 429
+2026-08-17T13:04:30Z,fetch_trends_ticker,failed,0,COF: The request failed: Google returned a response with code 429
+2026-08-17T13:05:11Z,fetch_trends_ticker,failed,0,CAH: The request failed: Google returned a response with code 429
+2026-08-17T13:09:28Z,fetch_trends_ticker,failed,0,"CCL: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Carnival+Corporation%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22"
+2026-08-17T13:09:33Z,fetch_trends,partial,12,12 new this run; 85/503 total saved; 28 failed
+2026-08-17T13:09:33Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-08-17T13:09:35Z,sentiment,success,3572,3572 filings scored (full_LM=False)
+2026-08-17T13:09:35Z,trends_factor,success,5044,5044 weekly factor rows
+2026-08-17T13:09:35Z,compute_ic,success,3531,3531 aligned filings; IC per horizon computed
+2026-08-17T13:09:35Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-18T10:00:05Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-18T10:00:06Z,build_universe,success,502,"503 names, 502 CIKs resolved"
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,TKO: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,TSCO: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,TRV: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,TRMB: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,UBER: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,UDR: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,UAL: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,UPS: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,VLO: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,VEEV: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,VRSN: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,VRT: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,VTRS: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,WRB: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,WELL: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,WY: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,WDAY: insufficient data (no rows)
+2026-08-18T10:00:57Z,fetch_prices_ticker,failed,0,YUM: insufficient data (no rows)
+2026-08-18T10:00:58Z,fetch_prices,partial,485,"485/503 tickers, 240175 rows, 18 failed"
+2026-08-18T10:01:31Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-18T10:05:00Z,fetch_8k,partial,3586,"3586 8-Ks since 2026-02-16, 1 tickers failed"
+2026-08-18T10:05:26Z,fetch_trends_ticker,failed,0,AZO: The request failed: Google returned a response with code 429
+2026-08-18T10:05:50Z,fetch_trends_ticker,failed,0,AVY: The request failed: Google returned a response with code 429
+2026-08-18T10:06:15Z,fetch_trends_ticker,failed,0,TECH: The request failed: Google returned a response with code 429
+2026-08-18T10:06:39Z,fetch_trends_ticker,failed,0,BLK: The request failed: Google returned a response with code 429
+2026-08-18T10:07:27Z,fetch_trends_ticker,failed,0,BKNG: The request failed: Google returned a response with code 429
+2026-08-18T10:07:43Z,fetch_trends_ticker,failed,0,BSX: The request failed: Google returned a response with code 429
+2026-08-18T10:08:22Z,fetch_trends_ticker,failed,0,BR: The request failed: Google returned a response with code 429
+2026-08-18T10:08:39Z,fetch_trends_ticker,failed,0,BRO: The request failed: Google returned a response with code 429
+2026-08-18T10:09:10Z,fetch_trends_ticker,partial,0,BF-B: insufficient data
+2026-08-18T10:09:31Z,fetch_trends_ticker,failed,0,CHRW: The request failed: Google returned a response with code 429
+2026-08-18T10:09:47Z,fetch_trends_ticker,failed,0,CPT: The request failed: Google returned a response with code 429
+2026-08-18T10:10:32Z,fetch_trends_ticker,failed,0,CCL: The request failed: Google returned a response with code 429
+2026-08-18T10:11:18Z,fetch_trends_ticker,failed,0,"CBRE: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/widgetdata/multiline?req=%7B%22time%22%3A+%222025-08-18+2026-08-18%22%2C+%22resolution%22%3A+%22WEEK%22%2C+%22locale%22%3A+%22en-US%22%2C+%22comparisonItem%22%3A+%5B%7B%22geo%22%3A+%7B%7D%2C+%22"
+2026-08-18T10:11:29Z,fetch_trends_ticker,failed,0,"CDW: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=5)"
+2026-08-18T10:11:35Z,fetch_trends_ticker,failed,0,COR: The request failed: Google returned a response with code 429
+2026-08-18T10:12:06Z,fetch_trends_ticker,failed,0,"CF: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22CF+Industries%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property"
+2026-08-18T10:12:28Z,fetch_trends,partial,24,24 new this run; 97/503 total saved; 15 failed
+2026-08-18T10:12:28Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-08-18T10:12:30Z,sentiment,success,3592,3592 filings scored (full_LM=False)
+2026-08-18T10:12:30Z,trends_factor,success,6292,6292 weekly factor rows
+2026-08-18T10:12:31Z,compute_ic,success,3531,3531 aligned filings; IC per horizon computed
+2026-08-18T10:12:31Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-19T10:00:05Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-19T10:00:07Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,TKO: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,TRMB: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,TFC: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,USB: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,ULTA: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,UNP: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,VLO: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,VTRS: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WAB: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WM: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WAT: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WELL: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WDC: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WY: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WTW: insufficient data (no rows)
+2026-08-19T10:01:00Z,fetch_prices_ticker,failed,0,WDAY: insufficient data (no rows)
+2026-08-19T10:01:01Z,fetch_prices,partial,487,"487/503 tickers, 242130 rows, 16 failed"
+2026-08-19T12:02:17Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-19T15:04:56Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-19T22:00:21Z,fetch_8k,partial,3606,"3606 8-Ks since 2026-02-17, 2 tickers failed"
+2026-08-19T22:35:33Z,fetch_trends_ticker,failed,0,"BLK: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22BlackRock%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22"
+2026-08-19T22:59:44Z,fetch_trends_ticker,partial,0,BF-B: insufficient data
+2026-08-19T23:15:20Z,fetch_trends_ticker,failed,0,"CHRW: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=5)"
+2026-08-20T00:00:32Z,fetch_trends_ticker,failed,0,CDW: The request failed: Google returned a response with code 429
+2026-08-20T00:14:42Z,fetch_trends_ticker,failed,0,"COR: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22Cencora%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%22%3"
+2026-08-20T00:17:01Z,fetch_trends_ticker,failed,0,CL: The request failed: Google returned a response with code 429
+2026-08-20T00:17:18Z,fetch_trends_ticker,failed,0,CMCSA: The request failed: Google returned a response with code 429
+2026-08-20T00:18:34Z,fetch_trends,partial,33,33 new this run; 121/503 total saved; 6 failed
+2026-08-20T00:18:34Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-08-20T00:18:36Z,sentiment,success,3615,3615 filings scored (full_LM=False)
+2026-08-20T00:18:36Z,trends_factor,success,8008,8008 weekly factor rows
+2026-08-20T00:18:37Z,compute_ic,success,3559,3559 aligned filings; IC per horizon computed
+2026-08-20T00:18:37Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-20T10:00:04Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-20T10:00:05Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-20T10:17:46Z,fetch_prices_batch,failed,0,batch 8: insufficient data (empty)
+2026-08-20T10:41:11Z,fetch_prices_batch,failed,0,batch 9: insufficient data (empty)
+2026-08-20T10:41:21Z,fetch_prices_batch,failed,0,batch 10: insufficient data (empty)
+2026-08-20T10:41:21Z,fetch_prices,partial,400,"400/503 tickers, 198668 rows, 103 failed"
+2026-08-20T10:46:48Z,fetch_8k_ticker,failed,0,"LIN: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0001707925.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-20T10:47:40Z,fetch_8k_ticker,failed,0,"INTC: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000050863.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-20T10:51:47Z,fetch_8k_ticker,failed,0,"AMD: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000002488.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-20T10:52:02Z,fetch_8k_ticker,failed,0,"DIS: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0001744489.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-20T10:52:16Z,fetch_8k_ticker,failed,0,"WFC: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000072971.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-08-20T10:54:04Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-20T11:15:45Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-20T11:18:16Z,fetch_8k,partial,3545,"3545 8-Ks since 2026-02-18, 7 tickers failed"
+2026-08-20T11:18:49Z,fetch_trends_ticker,failed,0,COR: The request failed: Google returned a response with code 429
+2026-08-20T11:20:08Z,fetch_trends_ticker,failed,0,CRWD: The request failed: Google returned a response with code 429
+2026-08-20T11:23:50Z,fetch_trends,partial,38,38 new this run; 154/503 total saved; 2 failed
+2026-08-20T11:23:50Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-08-20T11:23:52Z,sentiment,success,3586,3586 filings scored (full_LM=False)
+2026-08-20T11:23:52Z,trends_factor,success,9984,9984 weekly factor rows
+2026-08-20T11:23:53Z,compute_ic,success,3544,3544 aligned filings; IC per horizon computed
+2026-08-20T11:23:53Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-21T07:38:47Z,compute_ic,success,3544,3544 aligned filings; IC + significance per horizon
+2026-08-21T07:42:49Z,run_start,success,0,INCREMENTAL UPDATE (--only ic)
+2026-08-21T07:43:04Z,build_universe,failed,0,403 Client Error: Forbidden for url: https://www.sec.gov/files/company_tickers.json
+2026-08-21T07:43:05Z,compute_ic,success,3544,3544 aligned filings; IC + significance per horizon
+2026-08-21T07:43:05Z,run_end,success,503,INCREMENTAL UPDATE (--only ic)
+2026-08-21T07:44:49Z,run_start,success,0,"INCREMENTAL UPDATE (--only ic,sentiment)"
+2026-08-21T07:45:04Z,build_universe,failed,0,403 Client Error: Forbidden for url: https://www.sec.gov/files/company_tickers.json
+2026-08-21T07:45:04Z,sentiment,partial,0,using BASELINE lexicon (full LM dictionary not found)
+2026-08-21T07:45:05Z,sentiment,success,3586,3586 filings scored (full_LM=False)
+2026-08-21T07:45:07Z,compute_ic,success,3544,3544 aligned filings; IC + significance per horizon
+2026-08-21T07:45:07Z,run_end,success,503,"INCREMENTAL UPDATE (--only ic,sentiment)"
+2026-08-21T07:51:55Z,run_start,success,0,"INCREMENTAL UPDATE (--only ic,sentiment)"
+2026-08-21T07:51:56Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-21T07:51:58Z,sentiment,success,3586,3586 filings scored (full_LM=True)
+2026-08-21T07:51:59Z,compute_ic,success,3544,3544 aligned filings; IC + significance per horizon
+2026-08-21T07:51:59Z,run_end,success,503,"INCREMENTAL UPDATE (--only ic,sentiment)"
+2026-08-21T08:05:16Z,run_start,success,0,INCREMENTAL UPDATE (--only filings)
+2026-08-21T08:05:16Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-21T08:05:45Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-21T08:06:38Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-21T08:08:42Z,fetch_8k,partial,3553,"3553 8-Ks since 2026-02-19, 2 tickers failed"
+2026-08-21T08:08:42Z,run_end,success,503,INCREMENTAL UPDATE (--only filings)
+2026-08-21T08:12:27Z,run_start,success,0,INCREMENTAL UPDATE (--only filings)
+2026-08-21T08:12:28Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-21T08:16:30Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-21T08:28:02Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-21T08:50:36Z,fetch_8k,partial,3553,"3553 8-Ks since 2026-02-19, 2 tickers failed; 1990 with EX-99 text, 1702MB fetched"
+2026-08-21T08:50:36Z,run_end,success,503,INCREMENTAL UPDATE (--only filings)
+2026-08-21T09:01:29Z,run_start,success,0,"INCREMENTAL UPDATE (--only ic,sentiment)"
+2026-08-21T09:01:29Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-21T09:01:34Z,sentiment,success,3553,3553 filings scored (full_LM=True)
+2026-08-21T09:01:35Z,compute_ic,success,3493,3493 aligned filings; IC + significance per horizon
+2026-08-21T09:01:35Z,run_end,success,503,"INCREMENTAL UPDATE (--only ic,sentiment)"

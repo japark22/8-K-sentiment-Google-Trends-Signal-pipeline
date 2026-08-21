@@ -1,0 +1,6 @@
+# Public-data pipeline dependencies.
+requests>=2.31
+pandas>=2.0
+lxml>=4.9          # for pandas.read_html (S&P 500 constituents from Wikipedia)
+yfinance>=0.2.40   # daily prices from Yahoo Finance (public, key-free)
+pytrends>=4.9      # Google Trends (unofficial public API)

@@ -1,0 +1,19 @@
+item,expectation,n_filings,horizon_days,ic_excess_pooled,t_pooled,ic_excess_bydate,t_bydate,n_dates,bonferroni_t,verdict
+2.02,signal expected (results of operations),1088,1,0.046842,1.544,0.06013,1.063,46,2.991,noise
+2.02,signal expected (results of operations),1088,3,0.038085,1.253,0.050014,1.032,45,2.991,noise
+2.02,signal expected (results of operations),1088,5,0.036007,1.182,0.009854,0.197,44,2.991,noise
+7.01,null expected (Reg FD disclosure),331,1,0.049513,0.899,-0.144549,-1.024,14,2.991,noise
+7.01,null expected (Reg FD disclosure),331,3,0.039566,0.713,0.081719,0.63,14,2.991,noise
+7.01,null expected (Reg FD disclosure),331,5,0.038267,0.685,-0.044136,-0.353,13,2.991,noise
+8.01,null expected (other events),706,1,-0.043538,-1.156,-0.09189,-1.555,83,2.991,noise
+8.01,null expected (other events),706,3,-0.033205,-0.872,-0.082443,-1.351,81,2.991,noise
+8.01,null expected (other events),706,5,-0.030905,-0.804,-0.055716,-0.933,79,2.991,noise
+5.02,exploratory (officer/director change),556,1,0.053443,1.259,0.035136,0.626,56,2.991,noise
+5.02,exploratory (officer/director change),556,3,0.065312,1.526,-0.025346,-0.422,55,2.991,noise
+5.02,exploratory (officer/director change),556,5,0.103078,2.391,-0.01985,-0.333,54,2.991,noise
+1.01,exploratory (material agreement),343,1,0.092293,1.707,0.053429,0.54,22,2.991,noise
+1.01,exploratory (material agreement),343,3,0.001248,0.023,-0.11174,-1.047,21,2.991,noise
+1.01,exploratory (material agreement),343,5,-0.005812,-0.105,-0.223019,-2.18,20,2.991,nominal only
+5.07,PLACEBO (shareholder vote tally),316,1,-0.035449,-0.629,0.008722,0.118,25,2.991,noise
+5.07,PLACEBO (shareholder vote tally),316,3,0.029288,0.519,0.058621,0.795,25,2.991,noise
+5.07,PLACEBO (shareholder vote tally),316,5,-0.011135,-0.197,0.035096,0.438,25,2.991,noise

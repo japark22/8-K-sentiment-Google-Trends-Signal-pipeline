@@ -1,0 +1,46 @@
+prices loaded for 503 tickers, benchmark on 502 dates
+filings aligned 3,506   skipped 47
+
+==============================================================================
+all 8-K   n = 3,506
+  measure                                 IC       t  dates
+  ---------------------------------------------------------
+  gap: overnight [not tradable]      -0.0277   -1.38    125
+  session: open->close, day 1        -0.0261   -1.26    125
+  open -> +1d close [tradable]       -0.0165   -0.80    124
+  open -> +3d close [tradable]       +0.0011   +0.05    122
+  open -> +5d close [tradable]       -0.0101   -0.43    120
+  close -> +1d close [CURRENT]       +0.0138   +0.64    124
+  close -> +3d close [CURRENT]       +0.0167   +0.73    122
+  close -> +5d close [CURRENT]       +0.0018   +0.08    120
+
+==============================================================================
+item 2.02   n = 1,091
+  measure                                 IC       t  dates
+  ---------------------------------------------------------
+  gap: overnight [not tradable]      -0.0170   -0.39     46
+  session: open->close, day 1        +0.0013   +0.03     46
+  open -> +1d close [tradable]       -0.0004   -0.01     46
+  open -> +3d close [tradable]       +0.0147   +0.33     45
+  open -> +5d close [tradable]       +0.0321   +0.74     44
+  close -> +1d close [CURRENT]       +0.0601   +1.06     46
+  close -> +3d close [CURRENT]       +0.0500   +1.03     45
+  close -> +5d close [CURRENT]       +0.0099   +0.20     44
+
+==============================================================================
+item 5.07  [PLACEBO]   n = 317
+  measure                                 IC       t  dates
+  ---------------------------------------------------------
+  gap: overnight [not tradable]      +0.0418   +0.62     25
+  session: open->close, day 1        +0.0895   +1.32     25
+  open -> +1d close [tradable]       +0.0305   +0.41     25
+  open -> +3d close [tradable]       +0.0783   +1.12     25
+  open -> +5d close [tradable]       +0.0220   +0.30     25
+  close -> +1d close [CURRENT]       +0.0087   +0.12     25
+  close -> +3d close [CURRENT]       +0.0586   +0.79     25
+  close -> +5d close [CURRENT]       +0.0351   +0.44     25
+
+A signal in `gap` only means it is real but priced before our entry.
+A signal in `session`/`open->h` but not `close->h` means the current
+entry rule was discarding it. Nothing anywhere means the tone
+measure carries no short-horizon information.
