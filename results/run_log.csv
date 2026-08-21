@@ -745,3 +745,44 @@ run_time,stage,status,count,error_summary
 2026-08-21T09:01:34Z,sentiment,success,3553,3553 filings scored (full_LM=True)
 2026-08-21T09:01:35Z,compute_ic,success,3493,3493 aligned filings; IC + significance per horizon
 2026-08-21T09:01:35Z,run_end,success,503,"INCREMENTAL UPDATE (--only ic,sentiment)"
+2026-08-21T10:00:03Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-21T10:00:04Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,TDG: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,TRV: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,USB: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,UBER: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,UDR: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,UPS: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,UHS: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VEEV: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VTR: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VLTO: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VRSN: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VRSK: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VRT: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VTRS: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,VICI: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,WRB: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,GWW: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,WAB: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,WEC: insufficient data (no rows)
+2026-08-21T10:00:56Z,fetch_prices_ticker,failed,0,WST: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,WY: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,WSM: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,WMB: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,WTW: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,WDAY: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,WYNN: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,XEL: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices_ticker,failed,0,YUM: insufficient data (no rows)
+2026-08-21T10:00:57Z,fetch_prices,partial,475,"475/503 tickers, 236141 rows, 28 failed"
+2026-08-21T10:01:30Z,fetch_8k_ticker,failed,0,AEP: insufficient data (no CIK for ticker)
+2026-08-21T10:02:33Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-21T10:04:56Z,fetch_8k,partial,3555,"3555 8-Ks since 2026-02-19, 2 tickers failed; 1 with EX-99 text, 0MB fetched"
+2026-08-21T10:05:37Z,fetch_trends_ticker,failed,0,ECL: The request failed: Google returned a response with code 429
+2026-08-21T10:10:18Z,fetch_trends_ticker,failed,0,"FE: HTTPSConnectionPool(host='trends.google.com', port=443): Max retries exceeded with url: /trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A+%5B%7B%22keyword%22%3A+%22FirstEnergy%22%2C+%22time%22%3A+%22today+12-m%22%2C+%22geo%22%3A+%22%22%7D%5D%2C+%22category%22%3A+0%2C+%22property%2"
+2026-08-21T10:10:23Z,fetch_trends,partial,38,38 new this run; 192/503 total saved; 2 failed
+2026-08-21T10:10:30Z,sentiment,success,3555,3555 filings scored (full_LM=True)
+2026-08-21T10:10:30Z,trends_factor,success,11960,11960 weekly factor rows
+2026-08-21T10:10:32Z,compute_ic,success,3510,3510 aligned filings; IC + significance per horizon
+2026-08-21T10:10:32Z,run_end,success,503,INCREMENTAL UPDATE
