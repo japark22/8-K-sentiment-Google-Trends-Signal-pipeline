@@ -68,7 +68,7 @@ fi
 if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
   if git add -A >> "$LOG" 2>&1 \
      && git commit -m "Scheduled pipeline run $(date '+%Y-%m-%d %H:%M')" >> "$LOG" 2>&1; then
-    if git push >> "$LOG" 2>&1; then
+    if git push origin main >> "$LOG" 2>&1; then
       echo "push OK" >> "$LOG"
     else
       echo "push FAILED" >> "$LOG"

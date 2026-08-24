@@ -796,3 +796,37 @@ run_time,stage,status,count,error_summary
 2026-08-24T03:28:44Z,trends_factor,success,14040,14040 weekly factor rows
 2026-08-24T03:28:46Z,compute_ic,success,3485,3485 aligned filings; IC + significance per horizon
 2026-08-24T03:28:46Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-24T10:00:05Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-24T10:00:05Z,build_universe,success,502,"503 names, 502 CIKs resolved"
+2026-08-24T10:17:13Z,fetch_prices_ticker,failed,0,NRG: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,PSKY: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,PAYX: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,PYPL: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,PLD: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,PSA: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,PHM: insufficient data (no rows)
+2026-08-24T10:17:14Z,fetch_prices_ticker,failed,0,Q: insufficient data (no rows)
+2026-08-24T11:44:56Z,fetch_prices_ticker,failed,0,RF: insufficient data (no rows)
+2026-08-24T11:44:56Z,fetch_prices_ticker,failed,0,HOOD: insufficient data (no rows)
+2026-08-24T11:44:56Z,fetch_prices_ticker,failed,0,RCL: insufficient data (no rows)
+2026-08-24T11:44:56Z,fetch_prices_ticker,failed,0,STT: insufficient data (no rows)
+2026-08-24T11:44:56Z,fetch_prices_ticker,failed,0,SMCI: insufficient data (no rows)
+2026-08-24T11:44:56Z,fetch_prices_ticker,failed,0,SYY: insufficient data (no rows)
+2026-08-24T11:44:57Z,fetch_prices_ticker,failed,0,TGT: insufficient data (no rows)
+2026-08-24T11:44:57Z,fetch_prices_ticker,failed,0,TEL: insufficient data (no rows)
+2026-08-24T11:44:57Z,fetch_prices_ticker,failed,0,TDY: insufficient data (no rows)
+2026-08-24T11:44:57Z,fetch_prices_ticker,failed,0,TER: insufficient data (no rows)
+2026-08-24T11:45:10Z,fetch_prices,partial,485,"485/503 tickers, 240503 rows, 18 failed"
+2026-08-24T12:02:19Z,fetch_8k_text,failed,0,"PM 0001628280-26-058513: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-08-24T15:05:03Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-24T15:05:14Z,fetch_8k_text,failed,0,"EXR 0001289490-26-000058: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-08-24T18:08:23Z,fetch_8k,partial,3530,"3530 8-Ks since 2026-02-22, 1 tickers failed; 2 with EX-99 text, 1MB fetched"
+2026-08-24T18:24:03Z,fetch_trends_ticker,failed,0,"HUBB: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=5)"
+2026-08-24T19:09:06Z,fetch_trends_ticker,failed,0,PODD: The request failed: Google returned a response with code 429
+2026-08-24T21:11:16Z,fetch_trends_ticker,failed,0,KKR: The request failed: Google returned a response with code 429
+2026-08-24T21:29:07Z,fetch_trends_ticker,failed,0,"KLAC: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=5)"
+2026-08-24T22:11:49Z,fetch_trends,partial,36,36 new this run; 270/503 total saved; 4 failed
+2026-08-24T22:11:54Z,sentiment,success,3528,3528 filings scored (full_LM=True)
+2026-08-24T22:11:54Z,trends_factor,success,15912,15912 weekly factor rows
+2026-08-24T22:11:55Z,compute_ic,success,3485,3485 aligned filings; IC + significance per horizon
+2026-08-24T22:11:55Z,run_end,success,503,INCREMENTAL UPDATE
