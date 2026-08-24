@@ -786,3 +786,13 @@ run_time,stage,status,count,error_summary
 2026-08-21T10:10:30Z,trends_factor,success,11960,11960 weekly factor rows
 2026-08-21T10:10:32Z,compute_ic,success,3510,3510 aligned filings; IC + significance per horizon
 2026-08-21T10:10:32Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-24T03:19:06Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-24T03:19:07Z,build_universe,success,502,"503 names, 502 CIKs resolved"
+2026-08-24T03:20:00Z,fetch_prices,success,503,"503/503 tickers, 249191 rows, 0 failed"
+2026-08-24T03:21:27Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-24T03:23:35Z,fetch_8k,partial,3524,"3524 8-Ks since 2026-02-22, 1 tickers failed; 7 with EX-99 text, 9MB fetched"
+2026-08-24T03:28:39Z,fetch_trends,success,40,40 new this run; 230/503 total saved; 0 failed
+2026-08-24T03:28:43Z,sentiment,success,3524,3524 filings scored (full_LM=True)
+2026-08-24T03:28:44Z,trends_factor,success,14040,14040 weekly factor rows
+2026-08-24T03:28:46Z,compute_ic,success,3485,3485 aligned filings; IC + significance per horizon
+2026-08-24T03:28:46Z,run_end,success,503,INCREMENTAL UPDATE
