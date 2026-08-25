@@ -830,3 +830,35 @@ run_time,stage,status,count,error_summary
 2026-08-24T22:11:54Z,trends_factor,success,15912,15912 weekly factor rows
 2026-08-24T22:11:55Z,compute_ic,success,3485,3485 aligned filings; IC + significance per horizon
 2026-08-24T22:11:55Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-25T10:00:05Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-25T10:00:06Z,build_universe,success,502,"503 names, 502 CIKs resolved"
+2026-08-25T10:00:47Z,fetch_prices_ticker,failed,0,DXCM: insufficient data (no rows)
+2026-08-25T10:00:59Z,fetch_prices_ticker,failed,0,KMI: insufficient data (no rows)
+2026-08-25T10:00:59Z,fetch_prices_ticker,failed,0,LH: insufficient data (no rows)
+2026-08-25T10:00:59Z,fetch_prices_ticker,failed,0,LITE: insufficient data (no rows)
+2026-08-25T10:00:59Z,fetch_prices_ticker,failed,0,MAR: insufficient data (no rows)
+2026-08-25T10:00:59Z,fetch_prices_ticker,failed,0,MRSH: insufficient data (no rows)
+2026-08-25T10:01:00Z,fetch_prices_ticker,failed,0,MET: insufficient data (no rows)
+2026-08-25T10:01:00Z,fetch_prices_ticker,failed,0,MOS: insufficient data (no rows)
+2026-08-25T10:01:00Z,fetch_prices_ticker,failed,0,NWSA: insufficient data (no rows)
+2026-08-25T10:01:14Z,fetch_prices_ticker,failed,0,TYL: insufficient data (no rows)
+2026-08-25T10:01:14Z,fetch_prices_ticker,failed,0,TSN: insufficient data (no rows)
+2026-08-25T10:01:14Z,fetch_prices_ticker,failed,0,ULTA: insufficient data (no rows)
+2026-08-25T10:01:14Z,fetch_prices_ticker,failed,0,VLO: insufficient data (no rows)
+2026-08-25T10:01:14Z,fetch_prices_ticker,failed,0,VRSK: insufficient data (no rows)
+2026-08-25T10:01:16Z,fetch_prices,partial,489,"489/503 tickers, 242692 rows, 14 failed"
+2026-08-25T14:03:43Z,fetch_8k_text,failed,0,"CHTR 0001104659-26-100328: HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=30)"
+2026-08-25T14:54:45Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-25T14:54:53Z,fetch_8k_text,failed,0,"EVRG 0001193125-26-363625: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-08-25T15:04:58Z,fetch_8k_text,failed,0,"HRL 0000048465-26-000049: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-08-25T16:00:12Z,fetch_8k_text,failed,0,"NWSA 0001564708-26-000187: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-08-25T16:06:15Z,fetch_8k_text,failed,0,"TRGP 0001193125-26-364099: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-08-25T18:07:38Z,fetch_8k,partial,3543,"3543 8-Ks since 2026-02-23, 1 tickers failed; 6 with EX-99 text, 3MB fetched"
+2026-08-25T18:13:37Z,fetch_trends_ticker,failed,0,"LEN: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=5)"
+2026-08-25T19:09:07Z,fetch_trends_ticker,failed,0,MLM: The request failed: Google returned a response with code 429
+2026-08-25T22:11:51Z,fetch_trends_ticker,failed,0,"MSI: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=2)"
+2026-08-25T22:12:04Z,fetch_trends,partial,37,37 new this run; 306/503 total saved; 3 failed
+2026-08-25T22:12:08Z,sentiment,success,3539,3539 filings scored (full_LM=True)
+2026-08-25T22:12:09Z,trends_factor,success,17836,17836 weekly factor rows
+2026-08-25T22:12:10Z,compute_ic,success,3503,3503 aligned filings; IC + significance per horizon
+2026-08-25T22:12:10Z,run_end,success,503,INCREMENTAL UPDATE
