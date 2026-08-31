@@ -945,3 +945,33 @@ run_time,stage,status,count,error_summary
 2026-08-27T10:10:21Z,trends_factor,success,20488,20488 weekly factor rows
 2026-08-27T10:10:23Z,compute_ic,success,3484,3484 aligned filings; IC + significance per horizon
 2026-08-27T10:10:23Z,run_end,success,503,INCREMENTAL UPDATE
+2026-08-28T10:00:03Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-28T10:00:04Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-28T10:00:32Z,fetch_prices_ticker,failed,0,RVTY: insufficient data (no rows)
+2026-08-28T10:00:32Z,fetch_prices_ticker,failed,0,ROST: insufficient data (no rows)
+2026-08-28T10:00:32Z,fetch_prices_ticker,failed,0,SPGI: insufficient data (no rows)
+2026-08-28T10:00:32Z,fetch_prices_ticker,failed,0,SOLV: insufficient data (no rows)
+2026-08-28T10:00:32Z,fetch_prices_ticker,failed,0,TPR: insufficient data (no rows)
+2026-08-28T10:00:36Z,fetch_prices,partial,498,"498/503 tickers, 246749 rows, 5 failed"
+2026-08-28T10:02:14Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-28T10:02:18Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-08-28T10:04:36Z,fetch_8k,partial,3495,"3495 8-Ks since 2026-02-26, 2 tickers failed; 10 with EX-99 text, 5MB fetched"
+2026-08-31T09:00:02Z,run_start,success,0,INCREMENTAL UPDATE
+2026-08-31T09:00:02Z,build_universe,success,501,"503 names, 501 CIKs resolved"
+2026-08-31T09:00:33Z,fetch_prices,success,503,"503/503 tickers, 247767 rows, 0 failed"
+2026-08-31T09:02:08Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-08-31T09:02:12Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-08-31T09:04:31Z,fetch_8k,partial,3438,"3438 8-Ks since 2026-03-01, 2 tickers failed; 7 with EX-99 text, 5MB fetched"
+2026-08-31T09:05:08Z,fetch_trends_ticker,failed,0,RVTY: The request failed: Google returned a response with code 429
+2026-08-31T09:05:24Z,fetch_trends_ticker,failed,0,HOOD: The request failed: Google returned a response with code 429
+2026-08-31T09:06:03Z,fetch_trends_ticker,failed,0,ROL: The request failed: Google returned a response with code 429
+2026-08-31T09:06:48Z,fetch_trends_ticker,failed,0,SNDK: The request failed: Google returned a response with code 429
+2026-08-31T09:07:04Z,fetch_trends_ticker,failed,0,SBAC: The request failed: Google returned a response with code 429
+2026-08-31T09:07:49Z,fetch_trends_ticker,failed,0,SRE: The request failed: Google returned a response with code 429
+2026-08-31T09:08:19Z,fetch_trends_ticker,failed,0,SWKS: The request failed: Google returned a response with code 429
+2026-08-31T09:08:43Z,fetch_trends_ticker,failed,0,SW: The request failed: Google returned a response with code 429
+2026-08-31T09:11:01Z,fetch_trends,partial,32,32 new this run; 401/503 total saved; 8 failed
+2026-08-31T09:11:05Z,sentiment,success,3445,3445 filings scored (full_LM=True)
+2026-08-31T09:11:06Z,trends_factor,success,22516,22516 weekly factor rows
+2026-08-31T09:11:07Z,compute_ic,success,3390,3390 aligned filings; IC + significance per horizon
+2026-08-31T09:11:07Z,run_end,success,503,INCREMENTAL UPDATE
