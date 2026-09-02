@@ -1007,3 +1007,18 @@ run_time,stage,status,count,error_summary
 2026-09-01T09:09:43Z,trends_factor,success,24596,24596 weekly factor rows
 2026-09-01T09:09:45Z,compute_ic,success,3412,3412 aligned filings; IC + significance per horizon
 2026-09-01T09:09:45Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-02T09:00:05Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-02T09:00:05Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-02T09:00:29Z,fetch_prices_ticker,failed,0,GDDY: insufficient data (no rows)
+2026-09-02T09:00:29Z,fetch_prices_ticker,failed,0,HWM: insufficient data (no rows)
+2026-09-02T09:00:29Z,fetch_prices_ticker,failed,0,INVH: insufficient data (no rows)
+2026-09-02T09:00:44Z,fetch_prices,partial,500,"500/503 tickers, 247282 rows, 3 failed"
+2026-09-02T09:01:29Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-02T09:02:18Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-02T09:02:22Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-02T09:04:44Z,fetch_8k,partial,3434,"3434 8-Ks since 2026-03-03, 3 tickers failed; 9 with EX-99 text, 9MB fetched"
+2026-09-02T09:08:23Z,fetch_trends,success,30,30 new this run; 473/503 total saved; 0 failed
+2026-09-02T09:08:32Z,sentiment,success,3449,3449 filings scored (full_LM=True)
+2026-09-02T09:08:33Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-02T09:08:35Z,compute_ic,success,3412,3412 aligned filings; IC + significance per horizon
+2026-09-02T09:08:35Z,run_end,success,503,INCREMENTAL UPDATE
