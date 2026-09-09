@@ -1122,3 +1122,13 @@ run_time,stage,status,count,error_summary
 2026-09-08T10:04:54Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-08T10:04:56Z,compute_ic,success,3375,3375 aligned filings; IC + significance per horizon
 2026-09-08T10:04:56Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-09T09:15:29Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-09T09:15:52Z,build_universe,failed,0,"HTTPSConnectionPool(host='www.sec.gov', port=443): Max retries exceeded with url: /files/company_tickers.json (Caused by NameResolutionError(""HTTPSConnection(host='www.sec.gov', port=443): Failed to resolve 'www.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 0: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 1: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 2: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 3: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 4: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 5: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 6: insufficient data (empty)
+2026-09-09T09:15:53Z,fetch_prices_batch,failed,0,batch 7: insufficient data (empty)
