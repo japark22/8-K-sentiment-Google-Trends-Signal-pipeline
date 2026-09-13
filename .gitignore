@@ -26,3 +26,8 @@ results/*.log
 .env
 # third-party dictionary, redistribute via its own source
 data/lm_master_dictionary.csv
+
+# APAC bulk data (regenerable)
+/data/kr_prices/
+/data/kr_filings/
+signals/kr_aligned.csv
