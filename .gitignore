@@ -51,3 +51,8 @@ signals/kr_aligned.csv
 /data/kr_prices/
 /data/kr_filings/
 signals/kr_aligned.csv
+
+# APAC bulk data (regenerable)
+/data/kr_prices/
+/data/kr_filings/
+signals/kr_aligned.csv
