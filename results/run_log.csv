@@ -1253,3 +1253,24 @@ run_time,stage,status,count,error_summary
 2026-09-15T10:04:39Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-15T10:04:40Z,compute_ic,success,3373,3373 aligned filings; IC + significance per horizon
 2026-09-15T10:04:41Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-16T10:05:48Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-16T10:05:54Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-16T10:06:45Z,fetch_prices_ticker,failed,0,O: insufficient data (no rows)
+2026-09-16T10:06:45Z,fetch_prices_ticker,failed,0,ROK: insufficient data (no rows)
+2026-09-16T10:06:45Z,fetch_prices_ticker,failed,0,ROL: insufficient data (no rows)
+2026-09-16T10:06:45Z,fetch_prices_ticker,failed,0,ROP: insufficient data (no rows)
+2026-09-16T10:06:45Z,fetch_prices_ticker,failed,0,STX: insufficient data (no rows)
+2026-09-16T10:06:45Z,fetch_prices_ticker,failed,0,STT: insufficient data (no rows)
+2026-09-16T10:06:46Z,fetch_prices_ticker,failed,0,SYF: insufficient data (no rows)
+2026-09-16T10:06:46Z,fetch_prices_ticker,failed,0,SNPS: insufficient data (no rows)
+2026-09-16T10:06:46Z,fetch_prices_ticker,failed,0,TPR: insufficient data (no rows)
+2026-09-16T10:06:51Z,fetch_prices,partial,494,"494/503 tickers, 244790 rows, 9 failed"
+2026-09-16T10:07:40Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-16T10:08:36Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-16T10:08:39Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-16T10:11:09Z,fetch_8k,partial,3392,"3392 8-Ks since 2026-03-17, 3 tickers failed; 12 with EX-99 text, 6MB fetched"
+2026-09-16T10:11:10Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-09-16T10:11:14Z,sentiment,success,3407,3407 filings scored (full_LM=True)
+2026-09-16T10:11:14Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-16T10:11:16Z,compute_ic,success,3353,3353 aligned filings; IC + significance per horizon
+2026-09-16T10:11:16Z,run_end,success,503,INCREMENTAL UPDATE
