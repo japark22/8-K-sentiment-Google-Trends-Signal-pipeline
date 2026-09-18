@@ -1286,3 +1286,35 @@ run_time,stage,status,count,error_summary
 2026-09-17T10:04:56Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-17T10:04:58Z,compute_ic,success,3365,3365 aligned filings; IC + significance per horizon
 2026-09-17T10:04:58Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-18T10:11:14Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-18T10:11:42Z,build_universe,failed,0,"HTTPSConnectionPool(host='www.sec.gov', port=443): Max retries exceeded with url: /files/company_tickers.json (Caused by NameResolutionError(""HTTPSConnection(host='www.sec.gov', port=443): Failed to resolve 'www.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:11:42Z,fetch_prices_batch,failed,0,batch 0: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 1: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 2: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 3: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 4: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 5: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 6: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 7: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 8: insufficient data (empty)
+2026-09-18T10:11:43Z,fetch_prices_batch,failed,0,batch 9: insufficient data (empty)
+2026-09-18T10:11:44Z,fetch_prices_batch,failed,0,batch 10: insufficient data (empty)
+2026-09-18T10:11:44Z,fetch_prices,failed,0,"0/503 tickers, 0 rows, 503 failed"
+2026-09-18T10:33:41Z,fetch_8k_ticker,failed,0,"AAPL: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000320193.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:33:56Z,fetch_8k_ticker,failed,0,"MSFT: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000789019.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:39:14Z,fetch_8k_ticker,failed,0,"AVGO: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0001730168.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:39:29Z,fetch_8k_ticker,failed,0,"CVX: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000093410.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:40:11Z,fetch_8k_ticker,failed,0,"MRK: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000310158.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:40:25Z,fetch_8k_ticker,failed,0,"ABBV: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0001551152.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:40:40Z,fetch_8k_ticker,failed,0,"COST: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000909832.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T10:49:15Z,fetch_8k_ticker,failed,0,"PEP: HTTPSConnectionPool(host='data.sec.gov', port=443): Max retries exceeded with url: /submissions/CIK0000077476.json (Caused by NameResolutionError(""HTTPSConnection(host='data.sec.gov', port=443): Failed to resolve 'data.sec.gov' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-09-18T11:22:03Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-18T12:57:39Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-18T12:57:43Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-18T14:59:36Z,fetch_8k_text,failed,0,"STLD 0001104659-26-108777: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-09-18T15:32:34Z,fetch_8k,partial,3355,"3355 8-Ks since 2026-03-19, 11 tickers failed; 7 with EX-99 text, 3MB fetched"
+2026-09-18T15:48:44Z,fetch_trends,failed,0,"TrendReq init failed: HTTPSConnectionPool(host='trends.google.com', port=443): Read timed out. (read timeout=2)"
+2026-09-18T16:00:02Z,sentiment,success,3411,3411 filings scored (full_LM=True)
+2026-09-18T16:00:02Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-18T16:00:03Z,compute_ic,success,3351,3351 aligned filings; IC + significance per horizon
+2026-09-18T16:00:03Z,run_end,success,503,INCREMENTAL UPDATE
