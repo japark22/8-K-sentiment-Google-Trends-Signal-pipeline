@@ -1318,3 +1318,28 @@ run_time,stage,status,count,error_summary
 2026-09-18T16:00:02Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-18T16:00:03Z,compute_ic,success,3351,3351 aligned filings; IC + significance per horizon
 2026-09-18T16:00:03Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-21T10:00:04Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-21T10:00:05Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,REG: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,HOOD: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SPGI: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SBAC: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SLB: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SHW: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SJM: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SW: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SNA: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SOLV: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,LUV: insufficient data (no rows)
+2026-09-21T10:00:54Z,fetch_prices_ticker,failed,0,SNPS: insufficient data (no rows)
+2026-09-21T10:00:55Z,fetch_prices_ticker,failed,0,TGT: insufficient data (no rows)
+2026-09-21T10:01:01Z,fetch_prices,partial,490,"490/503 tickers, 241832 rows, 13 failed"
+2026-09-21T10:01:47Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-21T10:02:35Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-21T10:02:38Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-21T10:04:53Z,fetch_8k,partial,3372,"3372 8-Ks since 2026-03-22, 3 tickers failed; 4 with EX-99 text, 3MB fetched"
+2026-09-21T10:04:54Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-09-21T10:04:58Z,sentiment,success,3387,3387 filings scored (full_LM=True)
+2026-09-21T10:04:59Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-21T10:05:00Z,compute_ic,success,3362,3362 aligned filings; IC + significance per horizon
+2026-09-21T10:05:00Z,run_end,success,503,INCREMENTAL UPDATE
