@@ -1343,3 +1343,15 @@ run_time,stage,status,count,error_summary
 2026-09-21T10:04:59Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-21T10:05:00Z,compute_ic,success,3362,3362 aligned filings; IC + significance per horizon
 2026-09-21T10:05:00Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-22T10:00:04Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-22T10:00:06Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-22T10:01:01Z,fetch_prices,success,503,"503/503 tickers, 248805 rows, 0 failed"
+2026-09-22T10:01:49Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-22T10:02:45Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-22T10:02:49Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-22T10:05:16Z,fetch_8k,partial,3385,"3385 8-Ks since 2026-03-23, 3 tickers failed; 3 with EX-99 text, 6MB fetched"
+2026-09-22T10:05:17Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-09-22T10:05:21Z,sentiment,success,3400,3400 filings scored (full_LM=True)
+2026-09-22T10:05:22Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-22T10:05:23Z,compute_ic,success,3369,3369 aligned filings; IC + significance per horizon
+2026-09-22T10:05:23Z,run_end,success,503,INCREMENTAL UPDATE
