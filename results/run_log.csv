@@ -1428,3 +1428,60 @@ run_time,stage,status,count,error_summary
 2026-09-24T10:05:00Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-24T10:05:02Z,compute_ic,success,3339,3339 aligned filings; IC + significance per horizon
 2026-09-24T10:05:02Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-25T10:00:04Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-25T10:00:04Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,RF: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,RMD: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,RVTY: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,HOOD: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,ROL: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,RCL: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SPGI: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SBAC: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SLB: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SPG: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SWKS: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SJM: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SNA: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SO: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,LUV: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SBUX: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,STE: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SMCI: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SNPS: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,SYY: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,TMUS: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,TROW: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,TTWO: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,TGT: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,TDY: insufficient data (no rows)
+2026-09-25T10:01:16Z,fetch_prices_ticker,failed,0,TXT: insufficient data (no rows)
+2026-09-25T10:01:23Z,fetch_prices_ticker,failed,0,TT: insufficient data (no rows)
+2026-09-25T10:01:23Z,fetch_prices_ticker,failed,0,TDG: insufficient data (no rows)
+2026-09-25T10:01:23Z,fetch_prices_ticker,failed,0,TRV: insufficient data (no rows)
+2026-09-25T10:01:23Z,fetch_prices_ticker,failed,0,TFC: insufficient data (no rows)
+2026-09-25T10:01:23Z,fetch_prices_ticker,failed,0,TYL: insufficient data (no rows)
+2026-09-25T10:01:23Z,fetch_prices_ticker,failed,0,UBER: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VEEV: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VTR: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VLTO: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VRSN: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VTRS: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VICI: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,VST: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,WAB: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,WAT: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,WST: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,WDC: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,WY: insufficient data (no rows)
+2026-09-25T10:01:24Z,fetch_prices_ticker,failed,0,XYL: insufficient data (no rows)
+2026-09-25T10:01:25Z,fetch_prices,partial,458,"458/503 tickers, 226341 rows, 45 failed"
+2026-09-25T10:02:15Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-25T10:03:11Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-25T10:03:15Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-25T10:05:48Z,fetch_8k,partial,3384,"3384 8-Ks since 2026-03-26, 3 tickers failed; 12 with EX-99 text, 8MB fetched"
+2026-09-25T10:05:49Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-09-25T10:05:54Z,sentiment,success,3399,3399 filings scored (full_LM=True)
+2026-09-25T10:05:54Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-25T10:05:56Z,compute_ic,success,3344,3344 aligned filings; IC + significance per horizon
+2026-09-25T10:05:56Z,run_end,success,503,INCREMENTAL UPDATE
