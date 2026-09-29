@@ -1510,3 +1510,28 @@ run_time,stage,status,count,error_summary
 2026-09-28T10:04:55Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-28T10:04:57Z,compute_ic,success,3328,3328 aligned filings; IC + significance per horizon
 2026-09-28T10:04:57Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-29T10:14:41Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-29T10:14:46Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,NVR: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,OXY: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,OKE: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,ORCL: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,PLTR: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,PANW: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,PNW: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,PEG: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,RL: insufficient data (no rows)
+2026-09-29T10:30:29Z,fetch_prices_ticker,failed,0,RJF: insufficient data (no rows)
+2026-09-29T10:30:40Z,fetch_prices,partial,493,"493/503 tickers, 243799 rows, 10 failed"
+2026-09-29T10:31:00Z,fetch_8k_text,failed,0,"AMD 0000002488-26-000182: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-09-29T10:46:59Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-29T11:02:30Z,fetch_8k_text,failed,0,"CINF 0000020286-26-000052: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-09-29T11:02:59Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-29T11:15:25Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-29T11:31:39Z,fetch_8k_text,failed,0,"KDP 0001418135-26-000060: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+2026-09-29T12:16:22Z,fetch_8k,partial,3391,"3391 8-Ks since 2026-03-30, 3 tickers failed; 9 with EX-99 text, 7MB fetched"
+2026-09-29T12:16:23Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-09-29T12:16:27Z,sentiment,success,3403,3403 filings scored (full_LM=True)
+2026-09-29T12:16:28Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-29T12:16:29Z,compute_ic,success,3352,3352 aligned filings; IC + significance per horizon
+2026-09-29T12:16:29Z,run_end,success,503,INCREMENTAL UPDATE
