@@ -1535,3 +1535,33 @@ run_time,stage,status,count,error_summary
 2026-09-29T12:16:28Z,trends_factor,success,26156,26156 weekly factor rows
 2026-09-29T12:16:29Z,compute_ic,success,3352,3352 aligned filings; IC + significance per horizon
 2026-09-29T12:16:29Z,run_end,success,503,INCREMENTAL UPDATE
+2026-09-30T10:00:05Z,run_start,success,0,INCREMENTAL UPDATE
+2026-09-30T10:00:05Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,EME: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,EMR: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,ERIE: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,EXC: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,EXPE: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,EXPD: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,FAST: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,FRT: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,FITB: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,FSLR: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,FISV: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,FOX: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,IT: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,GEHC: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,GEV: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,GEN: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,GD: insufficient data (no rows)
+2026-09-30T10:00:31Z,fetch_prices_ticker,failed,0,GM: insufficient data (no rows)
+2026-09-30T10:00:55Z,fetch_prices,partial,485,"485/503 tickers, 240282 rows, 18 failed"
+2026-09-30T10:01:39Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-09-30T10:02:28Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-09-30T10:02:32Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-09-30T10:04:49Z,fetch_8k,partial,3384,"3384 8-Ks since 2026-03-31, 3 tickers failed; 6 with EX-99 text, 3MB fetched"
+2026-09-30T10:04:50Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-09-30T10:04:54Z,sentiment,success,3399,3399 filings scored (full_LM=True)
+2026-09-30T10:04:55Z,trends_factor,success,26156,26156 weekly factor rows
+2026-09-30T10:04:56Z,compute_ic,success,3355,3355 aligned filings; IC + significance per horizon
+2026-09-30T10:04:56Z,run_end,success,503,INCREMENTAL UPDATE
