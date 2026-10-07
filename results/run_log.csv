@@ -1705,3 +1705,29 @@ run_time,stage,status,count,error_summary
 2026-10-06T15:41:59Z,trends_factor,success,26156,26156 weekly factor rows
 2026-10-06T15:42:01Z,compute_ic,success,3352,3352 aligned filings; IC + significance per horizon
 2026-10-06T15:42:01Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-07T10:00:03Z,run_start,success,0,INCREMENTAL UPDATE
+2026-10-07T10:00:03Z,build_universe,success,500,"503 names, 500 CIKs resolved"
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,EOG: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,ERIE: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,FSLR: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,FISV: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,FOX: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,IT: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,GEN: insufficient data (no rows)
+2026-10-07T10:00:30Z,fetch_prices_ticker,failed,0,GD: insufficient data (no rows)
+2026-10-07T10:00:54Z,fetch_prices_ticker,failed,0,TFC: insufficient data (no rows)
+2026-10-07T10:00:54Z,fetch_prices_ticker,failed,0,TYL: insufficient data (no rows)
+2026-10-07T10:00:54Z,fetch_prices_ticker,failed,0,UPS: insufficient data (no rows)
+2026-10-07T10:00:54Z,fetch_prices_ticker,failed,0,VST: insufficient data (no rows)
+2026-10-07T10:00:54Z,fetch_prices_ticker,failed,0,WDC: insufficient data (no rows)
+2026-10-07T10:00:54Z,fetch_prices_ticker,failed,0,XYL: insufficient data (no rows)
+2026-10-07T10:00:55Z,fetch_prices,partial,489,"489/503 tickers, 241812 rows, 14 failed"
+2026-10-07T10:01:41Z,fetch_8k_ticker,failed,0,AVB: insufficient data (no CIK for ticker)
+2026-10-07T10:02:33Z,fetch_8k_ticker,failed,0,EA: insufficient data (no CIK for ticker)
+2026-10-07T10:02:36Z,fetch_8k_ticker,failed,0,EQR: insufficient data (no CIK for ticker)
+2026-10-07T10:04:57Z,fetch_8k,partial,3402,"3402 8-Ks since 2026-04-07, 3 tickers failed; 6 with EX-99 text, 15MB fetched"
+2026-10-07T10:04:58Z,fetch_trends,failed,0,0 new this run; 503/503 total saved; 0 failed
+2026-10-07T10:05:02Z,sentiment,success,3417,3417 filings scored (full_LM=True)
+2026-10-07T10:05:02Z,trends_factor,success,26156,26156 weekly factor rows
+2026-10-07T10:05:04Z,compute_ic,success,3356,3356 aligned filings; IC + significance per horizon
+2026-10-07T10:05:04Z,run_end,success,503,INCREMENTAL UPDATE
