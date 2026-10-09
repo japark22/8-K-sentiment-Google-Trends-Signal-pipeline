@@ -23,7 +23,9 @@ jobs:
           c = os.environ["CHECK"]
           ua = {"User-Agent": f"8K-Trends-Research/1.0 ({os.environ.get('SEC_CONTACT_EMAIL','')})"}
           def get(url, **kw):
-              r = requests.get(url, timeout=30, **kw); print(url, r.status_code, len(r.content)); return r
+              r = requests.get(url, timeout=30, **kw)
+              print(f"::notice title={c}::{url} -> {r.status_code}, {len(r.content)} bytes, starts {r.content[:20]!r}")
+              return r
           if c == "sec_tickers":
               ok = get("https://www.sec.gov/files/company_tickers.json", headers=ua).ok
           elif c == "sec_ticker_txt":
@@ -31,8 +33,8 @@ jobs:
           elif c == "sec_submissions":
               ok = get("https://data.sec.gov/submissions/CIK0000320193.json", headers=ua).ok
           elif c == "lm_drive":
-              r = get("https://drive.google.com/uc?export=download&id=1iq2RUf8qGFEAk1g8wQntP3habOnR3fXF")
-              ok = r.ok and r.content[:5] == b"Word,"
+              r = get("https://drive.usercontent.google.com/download?id=1iq2RUf8qGFEAk1g8wQntP3habOnR3fXF&export=download&confirm=t")
+              ok = r.ok and r.content.lstrip(b"\xef\xbb\xbf")[:5] == b"Word,"
           elif c == "yfinance":
               import yfinance as yf
               ok = len(yf.download("AAPL", period="5d", progress=False)) > 0
