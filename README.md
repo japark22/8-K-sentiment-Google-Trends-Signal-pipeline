@@ -29,7 +29,7 @@ Signal A, 8-K tone vs market-adjusted forward return (S&P 500, run of 2026-10-08
 | 3 days | +0.0161 | 0.74 | 122 | 3,316 |
 | 5 days | +0.0056 | 0.24 | 120 | 3,278 |
 
-Signal B, Trends week-over-week change vs 5-day excess return: weekly IC **+0.0166, t = 1.57**, over 60 weeks and 25,944 ticker-weeks (2025-07 to 2026-08). None of these weeks rests on vintages yet, since vintage logging starts with the scheduled runs.
+Signal B, Trends week-over-week change vs 5-day excess return: weekly IC **+0.0166, t = 1.57**, over 60 weeks and 25,944 ticker-weeks (2025-07 to 2026-08). This was computed on the full Trends set collected before the move to GitHub Actions. The runner rebuilds its own Trends store at about 100 names a day under Google's rate limit, and any IC computed on less than 90% of the universe is logged as `partial`, with its `coverage` recorded. None of these weeks rests on vintages yet, since vintage logging starts with the scheduled runs.
 
 **Reading.** Both signals are positive and small, and neither is statistically distinguishable from zero. That is consistent with the literature's effect sizes and with the sample's stated resolution. Breaking results down by 8-K item, with a Bonferroni threshold of |t| > 2.99 across 18 tests, found nothing ([`results/ic_by_item_full.txt`](results/ic_by_item_full.txt)). The intraday timing decomposition shows no tradable drift that the close-to-close numbers miss ([`results/timing_decomposition.txt`](results/timing_decomposition.txt)).
 

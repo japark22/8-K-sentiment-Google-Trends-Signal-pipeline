@@ -29,7 +29,22 @@ HORIZON = 5
 MIN_NAMES_PER_WEEK = 30
 OUT = config.RESULTS_DIR / "trends_ic_history.csv"
 FIELDS = ["run_time", "signal", "horizon_days", "ic_mean", "ic_se", "ic_tstat", "n_weeks",
-          "n_obs", "weeks_vintage", "first_week", "last_week", "flag"]
+          "n_obs", "weeks_vintage", "first_week", "last_week", "flag", "n_tickers", "coverage"]
+FULL_COVERAGE = 0.90   # below this share of the universe the row is logged as partial
+
+
+def _append(res: dict) -> None:
+    """Append one row; upgrade an older file's header in place if columns were added."""
+    rows = []
+    if OUT.exists():
+        with open(OUT, newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+    rows.append(res)
+    with open(OUT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS, extrasaction="ignore")
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in FIELDS})
 
 
 def _load_factor():
@@ -49,6 +64,7 @@ def run() -> dict:
     prices = {}
     by_week: dict[str, list[tuple[float, float]]] = {}
     vintage_weeks: set[str] = set()
+    tickers_used: set[str] = set()
     for r in rows:
         tk = r["ticker"]
         if tk not in prices:
@@ -67,6 +83,7 @@ def run() -> dict:
             continue
         excess = (c1 / c0 - 1.0) - bench[d0][0]
         by_week.setdefault(r["week"], []).append((float(r["wow_change"]), excess))
+        tickers_used.add(tk)
         if r.get("source") == "vintage":
             vintage_weeks.add(r["week"])
 
@@ -90,17 +107,16 @@ def run() -> dict:
     t = mean / se if se else None
     flag = "LOOKAHEAD?" if abs(mean) > config.IC_LOOKAHEAD_THRESHOLD else (
         "SIGNIFICANT" if t is not None and abs(t) > 2 else "NOISE")
+    universe = max(len(list(config.PRICES_DIR.glob("*.csv"))), 1)
+    coverage = len(tickers_used) / universe
     res = {"run_time": utils.utcnow_iso(), "signal": "trends_wow", "horizon_days": HORIZON,
            "ic_mean": round(mean, 6), "ic_se": round(se, 6), "ic_tstat": round(t, 3) if t else None,
            "n_weeks": k, "n_obs": n_obs, "weeks_vintage": len(vintage_weeks & set(used)),
-           "first_week": used[0], "last_week": used[-1], "flag": flag}
-    new = not OUT.exists()
-    with open(OUT, "a", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=FIELDS)
-        if new:
-            w.writeheader()
-        w.writerow(res)
-    utils.log_run("trends_ic", "success", k,
-                  f"weekly IC {mean:+.4f} (t {t:+.2f}) over {k} weeks; "
-                  f"{res['weeks_vintage']} on point-in-time vintages")
+           "first_week": used[0], "last_week": used[-1], "flag": flag,
+           "n_tickers": len(tickers_used), "coverage": round(coverage, 3)}
+    _append(res)
+    status = "success" if coverage >= FULL_COVERAGE else "partial"
+    utils.log_run("trends_ic", status, k,
+                  f"weekly IC {mean:+.4f} (t {t:+.2f}) over {k} weeks, {len(tickers_used)} tickers "
+                  f"({coverage:.0%} of universe); {res['weeks_vintage']} weeks on point-in-time vintages")
     return res
