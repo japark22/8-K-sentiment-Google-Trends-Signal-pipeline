@@ -16,7 +16,11 @@ Output: signals/sentiment.csv with columns:
 """
 from __future__ import annotations
 
+import base64
 import csv
+import gzip
+import json
+import os
 import re
 from pathlib import Path
 
@@ -43,8 +47,32 @@ _BASELINE_NEG = {
 _WORD_RE = re.compile(r"[A-Za-z']+")
 
 
+def _lexicon_from_env() -> tuple[set[str], set[str]] | None:
+    """LM positive/negative word lists from the LM_WORDLISTS environment variable.
+
+    The variable holds base64(gzip(json)) with keys "positive" and "negative",
+    built from the user's own licensed copy of the Master Dictionary. It is how
+    the scheduled GitHub job gets the full lexicon without the dictionary ever
+    being redistributed in this public repository.
+    """
+    raw = os.environ.get("LM_WORDLISTS", "").strip()
+    if not raw:
+        return None
+    try:
+        d = json.loads(gzip.decompress(base64.b64decode(raw)))
+        pos, neg = set(d["positive"]), set(d["negative"])
+        return (pos, neg) if pos and neg else None
+    except Exception:  # noqa: BLE001 - a malformed secret must not crash, it falls through
+        return None
+
+
 def load_lexicon() -> tuple[set[str], set[str], bool]:
-    """Return (positive, negative, used_full_lm)."""
+    """Return (positive, negative, used_full_lm).
+
+    Order: local Master Dictionary CSV, then the LM_WORDLISTS variable, then
+    the small built-in baseline. With REQUIRE_FULL_LM=1 the baseline is
+    refused, so the sentiment series can never switch lexicon silently.
+    """
     if LM_CSV.exists():
         pos, neg = set(), set()
         with open(LM_CSV, newline="", encoding="utf-8") as f:
@@ -59,6 +87,12 @@ def load_lexicon() -> tuple[set[str], set[str], bool]:
                     neg.add(word)
         if pos and neg:
             return pos, neg, True
+    env = _lexicon_from_env()
+    if env:
+        return env[0], env[1], True
+    if os.environ.get("REQUIRE_FULL_LM") == "1":
+        raise RuntimeError("full Loughran-McDonald lexicon required but neither "
+                           "data/lm_master_dictionary.csv nor LM_WORDLISTS is available")
     return _BASELINE_POS, _BASELINE_NEG, False
 
 

@@ -33,6 +33,7 @@ import fetch_8k
 import fetch_trends
 import sentiment
 import trends_factor
+import compute_trends_ic
 import compute_ic
 
 
@@ -80,7 +81,7 @@ def self_checks() -> list[str]:
 
 
 def main() -> None:
-    stage_keys = ["prices", "filings", "trends", "sentiment", "trends_factor", "ic"]
+    stage_keys = ["prices", "filings", "trends", "sentiment", "trends_factor", "ic", "trends_ic"]
     ap = argparse.ArgumentParser()
     ap.add_argument("--setup", action="store_true", help="force one-time setup")
     ap.add_argument("--no-trends", action="store_true", help="skip Google Trends")
@@ -99,7 +100,7 @@ def main() -> None:
         for tok in args.only.split(","):
             tok = tok.strip().lower()
             if tok == "signals":
-                requested.update({"sentiment", "trends_factor", "ic"})
+                requested.update({"sentiment", "trends_factor", "ic", "trends_ic"})
             elif tok in stage_keys:
                 requested.add(tok)
             elif tok:
@@ -147,6 +148,8 @@ def main() -> None:
     ic = {}
     if wanted("ic"):
         ic = _stage("compute_ic", compute_ic.run) or {}
+    if wanted("trends_ic"):
+        _stage("trends_ic", compute_trends_ic.run)
 
     utils.log_run("run_end", "success", len(tickers), mode)
 

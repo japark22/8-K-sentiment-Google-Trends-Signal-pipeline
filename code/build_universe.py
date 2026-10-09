@@ -38,8 +38,13 @@ def _norm_ticker(t: str) -> str:
 
 
 def resolve_ciks(session: requests.Session, rows: list[dict]) -> list[dict]:
-    """Attach a zero-padded 10-digit 'cik' to each row using SEC's mapping.
-    Rows whose ticker is not found are kept but marked cik='' (insufficient)."""
+    """Attach a zero-padded 10-digit 'cik' to each row using SEC's own files.
+
+    Sources, in order: company_tickers.json, then ticker.txt (SEC's plain
+    ticker->CIK list, which carries some names the JSON omits), then the CIK
+    already on file for that ticker. A ticker found in none of them keeps
+    cik='' and is reported as insufficient data - never guessed.
+    """
     resp = utils.get_with_retry(
         session, config.SEC_TICKERS_URL,
         headers={"User-Agent": config.SEC_USER_AGENT}, key="sec",
@@ -48,10 +53,25 @@ def resolve_ciks(session: requests.Session, rows: list[dict]) -> list[dict]:
     for item in resp.json().values():
         mapping[_norm_ticker(item["ticker"])] = str(item["cik_str"]).zfill(10)
 
+    missing = [_norm_ticker(r.get("ticker", "")) for r in rows
+               if _norm_ticker(r.get("ticker", "")) not in mapping]
+    if missing:
+        try:
+            txt = utils.get_with_retry(
+                session, config.SEC_TICKER_TXT_URL,
+                headers={"User-Agent": config.SEC_USER_AGENT}, key="sec",
+            ).text
+            for line in txt.splitlines():
+                parts = line.strip().split()
+                if len(parts) == 2 and parts[1].isdigit():
+                    mapping.setdefault(_norm_ticker(parts[0].upper()), parts[1].zfill(10))
+        except Exception:  # noqa: BLE001 - the fallback is best effort
+            pass
+
     out = []
     for r in rows:
         tk = _norm_ticker(r.get("ticker", ""))
-        cik = mapping.get(tk, "")
+        cik = mapping.get(tk) or (r.get("cik") or "").strip()
         out.append({"ticker": tk, "company": r.get("company", ""), "cik": cik})
     return out
 

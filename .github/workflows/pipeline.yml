@@ -1,0 +1,94 @@
+name: pipeline
+
+# Daily incremental run on GitHub's servers (replaces the old macOS launchd job).
+# 10:05 UTC = 18:05 HKT, after the previous US session's filings are on EDGAR.
+on:
+  schedule:
+    - cron: "5 10 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "extra arguments for code/run_pipeline.py (e.g. --only signals)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    env:
+      SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+      LM_WORDLISTS: ${{ secrets.LM_WORDLISTS }}
+      REQUIRE_FULL_LM: "1"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: code/requirements.txt
+      - run: pip install -r code/requirements.txt
+
+      - name: check secrets
+        run: |
+          [ -n "$SEC_CONTACT_EMAIL" ] || { echo "::error::secret SEC_CONTACT_EMAIL is not set (SEC requires a contact address)"; exit 1; }
+          [ -n "$LM_WORDLISTS" ] || { echo "::error::secret LM_WORDLISTS is not set (full LM lexicon required)"; exit 1; }
+
+      # Bulk raw data (prices, 8-K texts, Trends series) is regenerable and not
+      # tracked in git; it persists between runs in the Actions cache. A cache
+      # miss is not an error: the pipeline refetches what is missing.
+      - name: restore raw data
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/prices
+            data/filings_8k
+            data/trends
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+
+      - run: echo "JOB_START=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+
+      - name: run pipeline
+        run: python code/run_pipeline.py ${{ inputs.args }}
+
+      - name: save raw data
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/prices
+            data/filings_8k
+            data/trends
+          key: raw-${{ github.run_id }}
+
+      - name: commit results
+        if: always()
+        run: |
+          git config user.name "japark22"
+          git config user.email "294023279+japark22@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Scheduled pipeline run $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep $((i*10)); done
+          exit 1
+
+      - name: fail if a core stage failed (GitHub e-mails the failure)
+        run: |
+          python - <<'PY'
+          import csv, os, sys
+          start = os.environ["JOB_START"]
+          core = {"fetch_prices", "fetch_8k", "sentiment", "compute_ic"}
+          rows = [r for r in csv.DictReader(open("results/run_log.csv")) if r["run_time"] >= start]
+          bad = [r for r in rows if r["stage"] in core and r["status"] == "failed"]
+          for r in rows:
+              if r["stage"] in core | {"fetch_trends", "trends_ic", "build_universe"}:
+                  print(f"::notice title={r['stage']}::{r['status']} {r['count']} {r['error_summary'][:200]}")
+          sys.exit(1 if bad else 0)
+          PY

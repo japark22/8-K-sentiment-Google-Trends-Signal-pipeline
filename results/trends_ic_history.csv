@@ -1,0 +1,2 @@
+run_time,signal,horizon_days,ic_mean,ic_se,ic_tstat,n_weeks,n_obs,weeks_vintage,first_week,last_week,flag
+2026-10-09T03:13:27Z,trends_wow,5,0.016597,0.010586,1.568,60,25944,0,2025-07-13,2026-08-30,NOISE
