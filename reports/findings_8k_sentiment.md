@@ -150,7 +150,7 @@ honest about what it is.
 
 ## Reproducing
 
-`probe_exhibits.py` and `probe_sgml.py` at the repository root are the two
+`code/probes/probe_exhibits.py` and `code/probes/probe_sgml.py` are the two
 throwaway scripts that established why filename matching was abandoned in
 favour of the SGML document types. They are kept as the record of that
 decision.

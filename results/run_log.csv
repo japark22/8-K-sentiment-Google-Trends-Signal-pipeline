@@ -1750,3 +1750,5 @@ run_time,stage,status,count,error_summary
 2026-10-08T10:05:03Z,trends_factor,success,26156,26156 weekly factor rows
 2026-10-08T10:05:04Z,compute_ic,success,3352,3352 aligned filings; IC + significance per horizon
 2026-10-08T10:05:04Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-09T03:13:25Z,trends_factor,success,26156,26156 weekly factor rows (0 from point-in-time vintages)
+2026-10-09T03:13:27Z,trends_ic,success,60,weekly IC +0.0166 (t +1.57) over 60 weeks; 0 on point-in-time vintages

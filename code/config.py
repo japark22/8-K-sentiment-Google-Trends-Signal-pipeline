@@ -40,6 +40,7 @@ SEC_USER_AGENT = f"8K-Trends-Research/1.0 ({SEC_CONTACT_EMAIL})"
 # SEC fair-access guidance is <=10 requests/second. We stay well under that.
 SEC_MIN_INTERVAL_SEC = 0.4  # ~2.5 req/s, conservative
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
+SEC_TICKER_TXT_URL = "https://www.sec.gov/include/ticker.txt"
 SEC_SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik10}.json"
 
 # --- Backfill windows ------------------------------------------------------

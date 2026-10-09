@@ -1,141 +1,102 @@
 # 8-K Sentiment + Google Trends Signal Pipeline
 
-A reproducible research pipeline that turns two **public** alternative-data
-sources into predictive equity signals and validates them honestly:
+**Do two public alternative-data signals predict S&P 500 returns once the backtest is made honest? A daily, point-in-time pipeline, and a result that says exactly how much the sample can and cannot resolve.**
 
-- **Signal A** — SEC 8-K filing sentiment (EDGAR)
-- **Signal B** — Google Trends search interest
+- **Signal A:** tone of SEC 8-K filings, scored with the Loughran-McDonald lexicon.
+- **Signal B:** week-over-week change in Google Trends search interest for each company.
 
-Public data only. Strict point-in-time discipline. No fabricated numbers.
-See [`PIPELINE_NOTES.md`](PIPELINE_NOTES.md) for methodology and limitations.
+Public data only (SEC EDGAR, Yahoo Finance prices, Google Trends). The pipeline runs every weekday on GitHub Actions and commits its results here.
 
-## Design highlights
+## Research at a glance
 
-- **Point-in-time correctness by construction.** Every 8-K is anchored to its
-  EDGAR `acceptanceDateTime`, and forward returns start from the first price
-  bar *strictly after* that moment — never the filing day's own close. This is
-  the single most common backtest bug, and it is prevented explicitly.
-- **Honest validation, not curve-fitting.** Signal quality is measured with
-  rank IC. A built-in guardrail flags `|IC| > 0.30` as a *likely lookahead bug,
-  not skill* — the pipeline is designed to catch its own optimism.
-- **Reproducible and resumable.** Every stage logs to an append-only audit
-  trail, retries with exponential backoff, and saves partial results so a run
-  can always resume. No hidden state.
-- **Documented limitations.** Survivorship bias, lexicon choice, and Google
-  Trends rescaling are disclosed rather than hidden.
-- **Public data only.** SEC EDGAR, public prices, Google Trends — fully
-  reproducible by anyone.
+**Question.** Do these signals carry information about short-horizon returns that survives a strictly point-in-time construction and correct standard errors?
 
-## Results (latest run — 2026-08-17)
+**What makes the test honest**
 
-Coverage: 503 S&P 500 names (CIKs resolved), 503/503 tickers with daily prices
-(~249k bars over ~2 years), and ~3,560 8-K filings scored over a ~6-month window
-(3,531 aligned to point-in-time forward returns).
+1. **Timing.** Every 8-K is anchored to its EDGAR `acceptanceDateTime`, not its filing date. The forward return starts at the first close strictly after that moment, never at a price set before the news was public. A Trends value enters only once its week has closed.
+2. **Statistics.** Pooling filings with SE = 1/√(n−1) treats filings that share a date as independent. On this data it once reported t = +2.19 where the correct by-date estimator gave t = +0.50. Every headline number below is a by-date (Fama-MacBeth) IC.
+3. **Power, stated up front.** With about 120 entry dates the sample can resolve |IC| above roughly 0.045. Tone effects reported in the literature are 0.01–0.03. A null here is "too small to see", not "zero", and the report says so ([`reports/findings_8k_sentiment.md`](reports/findings_8k_sentiment.md)).
+4. **Revisions in Google Trends.** Google rescales a series on every request. From now on each refresh logs a dated vintage, and the factor prefers the value as it looked on that date. History older than the vintage log is labelled as revision-prone.
+5. **No silent method changes.** The scheduled job refuses to run without the full LM lexicon rather than falling back to a toy word list. It flags any |IC| above 0.30 as a likely lookahead bug.
 
-Signal A — 8-K sentiment tone vs. point-in-time forward returns (Spearman rank
-IC; entry = first trading day strictly after each filing's EDGAR
-`acceptanceDateTime`):
+**Results.** The numbers trace to [`results/ic_history.csv`](results/ic_history.csv) and [`results/trends_ic_history.csv`](results/trends_ic_history.csv).
 
-| Horizon | Rank IC | Observations |
-|--------:|--------:|-------------:|
-| 1 day   | −0.0171 |        3,531 |
-| 3 days  | −0.0030 |        3,479 |
-| 5 days  | −0.0037 |        3,434 |
+Signal A, 8-K tone vs market-adjusted forward return (S&P 500, run of 2026-10-08):
 
-All three ICs are near zero and none trip the `|IC| > 0.30` lookahead guard —
-an honest, believable result for a simple 8-K tone signal, and evidence that
-the point-in-time construction is not leaking future information. These numbers
-use the built-in **baseline** lexicon; supplying the full Loughran-McDonald
-dictionary (`data/lm_master_dictionary.csv`) is the natural next step. **Signal
-B (Google Trends) has not been backfilled yet**, so its factor is currently
-empty. Numbers trace to `results/ic_history.csv` and `signals/`.
+| Horizon | By-date IC | t | Entry dates | Filings |
+|--------:|-----------:|--:|------------:|--------:|
+| 1 day | +0.0282 | 1.25 | 124 | 3,352 |
+| 3 days | +0.0161 | 0.74 | 122 | 3,316 |
+| 5 days | +0.0056 | 0.24 | 120 | 3,278 |
+
+Signal B, Trends week-over-week change vs 5-day excess return: weekly IC **+0.0166, t = 1.57**, over 60 weeks and 25,944 ticker-weeks (2025-07 to 2026-08). None of these weeks rests on vintages yet, since vintage logging starts with the scheduled runs.
+
+**Reading.** Both signals are positive and small, and neither is statistically distinguishable from zero. That is consistent with the literature's effect sizes and with the sample's stated resolution. Breaking results down by 8-K item, with a Bonferroni threshold of |t| > 2.99 across 18 tests, found nothing ([`results/ic_by_item_full.txt`](results/ic_by_item_full.txt)). The intraday timing decomposition shows no tradable drift that the close-to-close numbers miss ([`results/timing_decomposition.txt`](results/timing_decomposition.txt)).
+
+**Extension, Korea.** Applying the same design to 259,541 DART disclosure titles gives a small positive market-adjusted IC that rises with horizon (0.017 at 1 day to 0.034 at 5 days) and is positive in both years ([`reports/apac_kr_phase1.md`](reports/apac_kr_phase1.md)).
+
+---
+
+## How it runs
+
+```
+GitHub Actions, weekdays 10:05 UTC (.github/workflows/pipeline.yml)
+  restore raw data (Actions cache)  ->  universe + CIKs (SEC)  ->  prices (yfinance)
+  ->  8-K metadata + text (EDGAR, <=2.5 req/s)  ->  Trends refresh (new, then stalest; vintage log)
+  ->  sentiment  ->  trends factor  ->  IC (Signal A)  ->  IC (Signal B)
+  ->  commit signals/ results/ data/trends_vintages/  ->  fail the job (e-mail) if a core stage failed
+```
+
+Every stage appends to [`results/run_log.csv`](results/run_log.csv) (`success` / `partial` / `failed`). Requests retry with exponential backoff, and a blocked source saves partial results so the next run resumes. Bulk raw data (prices, 8-K texts, Trends series) is not tracked in git. It persists between runs in the Actions cache, and a cache miss only means refetching.
+
+**Secrets the job needs** (repository Settings → Secrets → Actions):
+
+- `SEC_CONTACT_EMAIL`: the contact address SEC's fair-access policy asks for in the User-Agent.
+- `LM_WORDLISTS`: the positive and negative LM word lists, packed from your own copy of the Master Dictionary. The dictionary itself is never redistributed here.
 
 ## Layout
 
 ```
-code/                 pipeline modules (see below)
+code/
+  run_pipeline.py      orchestrator: state detection, stages, self-checks
+  build_universe.py    S&P 500 universe, CIKs from SEC's own ticker files
+  fetch_prices.py      daily prices (yfinance, batched)
+  fetch_8k.py          8-K metadata + text, keyed on acceptanceDateTime
+  fetch_trends.py      Google Trends refresh with point-in-time vintages
+  sentiment.py         Signal A: LM tone per filing
+  trends_factor.py     Signal B: week-over-week change, closed weeks only
+  compute_ic.py        Signal A evaluation: pooled, excess and by-date IC
+  compute_trends_ic.py Signal B evaluation: weekly cross-sectional IC
+  ic_by_item.py, decompose_timing.py   follow-up analyses
+  fetch_dart_kr.py, fetch_kr_prices.py, signal_kr.py, eval_kr.py   Korea extension
+  probes/              the two one-off probes behind the exhibit-parsing decision
 data/
-  universe.csv        investable universe (ticker, company, cik)
-  prices/             daily OHLC per ticker (<TICKER>.csv)
-  filings_8k/         8-K metadata per ticker + text/ bodies
-  trends/             weekly Google Trends interest per ticker
-signals/              sentiment.csv, trends_factor.csv, aligned_returns.csv
-results/
-  run_log.csv         append-only audit log of every stage
-  ic_history.csv      IC per horizon per run (with lookahead flag)
-reports/{ops,weekly}  generated reports
+  universe.csv         ticker, company, CIK
+  trends_vintages/     dated Trends values (point-in-time record, tracked)
+  sample/              small format examples of the untracked raw stores
+signals/               sentiment.csv, trends_factor.csv, aligned_returns.csv
+results/               run_log.csv, ic_history.csv, trends_ic_history.csv, item and timing tables
+reports/               findings, Korea extension, ops self-checks, weekly reports
 ```
 
-## Setup
-
-Homebrew's Python is externally managed (PEP 668), so use an isolated virtual
-environment — the clean, recommended approach:
+## Run locally
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r code/requirements.txt
-```
-
-Optionally set a contact email for SEC's required User-Agent (defaults are set):
-
-```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r code/requirements.txt
 export SEC_CONTACT_EMAIL="you@example.com"
+python code/run_pipeline.py              # first run backfills; later runs are incremental
+python code/run_pipeline.py --only signals   # recompute sentiment, factors and IC from data on disk
+python code/run_pipeline.py --no-trends      # skip Google Trends
 ```
 
-## Run
+For the full lexicon, place the Loughran-McDonald Master Dictionary at `data/lm_master_dictionary.csv` (free for academic use from [SRAF](https://sraf.nd.edu/loughranmcdonald-master-dictionary/)). Without it a small placeholder list is used and labelled as such. `code/run_auto.sh` and `schedule/` hold the earlier macOS launchd setup, kept for running on a local machine instead.
 
-With the virtual environment activated (`source .venv/bin/activate`):
+## Limitations
 
-```bash
-python code/run_pipeline.py            # auto: first-run setup vs incremental
-python code/run_pipeline.py --setup    # force one-time backfill
-python code/run_pipeline.py --no-trends  # skip Google Trends if it blocks you
-```
+- **Survivorship.** The universe is current S&P 500 membership, applied backwards.
+- **Short history.** Six months of 8-Ks and a twelve-month Trends window. The power statement above is the binding constraint.
+- **Crude market adjustment.** It subtracts an equal-weighted market return. It is not a risk model.
+- **Revision-prone Trends history.** Trends history before the vintage log began uses revised values.
 
-## Scheduled pipeline (hands-off, via macOS launchd)
-
-`code/run_auto.sh` activates the venv, runs the incremental pipeline, and
-commits + pushes results to GitHub. `schedule/local.8ktrends.plist`
-schedules it on weekdays at 18:00 local time. Install once:
-
-```bash
-bash schedule/install.sh
-```
-
-It then runs unattended (while the Mac is awake and you are logged in; a run
-missed due to sleep/shutdown fires at the next opportunity). Progress is logged
-to `results/pipeline.log`. To stop it:
-`bash schedule/install.sh --uninstall`.
-
-The first run performs the one-time backfill (expand universe toward the
-S&P 500, ~6 months of 8-Ks, ~2 years of prices, initial Trends) and computes
-baseline sentiment, the trends factor, and IC. Subsequent runs update
-incrementally. The pipeline is resumable: failures are logged and partials are
-saved.
-
-## Modules
-
-| File | Purpose |
-|------|---------|
-| `config.py` | Paths, SEC User-Agent, windows, thresholds |
-| `utils.py` | Run logging, throttling, retry w/ backoff, state detection |
-| `build_universe.py` | Expand to S&P 500, resolve CIKs from SEC |
-| `fetch_prices.py` | Daily prices from Yahoo Finance via yfinance (public, key-free, batched) |
-| `fetch_8k.py` | 8-K metadata + text; captures `acceptanceDateTime` |
-| `fetch_trends.py` | Google Trends via pytrends (throttled/batched) |
-| `sentiment.py` | Signal A: LM-lexicon tone per 8-K |
-| `trends_factor.py` | Signal B: lagged week-over-week interest |
-| `compute_ic.py` | Point-in-time forward returns + Spearman IC |
-| `run_pipeline.py` | Orchestrator w/ state detection & self-checks |
-```
-```
-
-## Data & GitHub
-
-The repository is kept lightweight: **bulk raw data is not committed** — it is
-fully regenerable by running the pipeline. Only code, the universe, signal
-outputs, results/logs, reports, and a few small format examples in
-`data/sample/` are tracked. Running the pipeline repopulates `data/prices/`,
-`data/filings_8k/`, and `data/trends/` locally (these are git-ignored).
+See [`PIPELINE_NOTES.md`](PIPELINE_NOTES.md) for methodology details.
