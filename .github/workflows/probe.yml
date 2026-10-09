@@ -1,0 +1,47 @@
+name: probe
+# One job per data source, so each source's reachability from GitHub's runners
+# shows up as its own pass/fail.
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        check: [sec_tickers, sec_ticker_txt, sec_submissions, lm_drive, yfinance, trends]
+    steps:
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests yfinance pytrends pandas
+      - env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+          CHECK: ${{ matrix.check }}
+        run: |
+          python - <<'PY'
+          import os, sys, time, requests
+          c = os.environ["CHECK"]
+          ua = {"User-Agent": f"8K-Trends-Research/1.0 ({os.environ.get('SEC_CONTACT_EMAIL','')})"}
+          def get(url, **kw):
+              r = requests.get(url, timeout=30, **kw); print(url, r.status_code, len(r.content)); return r
+          if c == "sec_tickers":
+              ok = get("https://www.sec.gov/files/company_tickers.json", headers=ua).ok
+          elif c == "sec_ticker_txt":
+              ok = get("https://www.sec.gov/include/ticker.txt", headers=ua).ok
+          elif c == "sec_submissions":
+              ok = get("https://data.sec.gov/submissions/CIK0000320193.json", headers=ua).ok
+          elif c == "lm_drive":
+              r = get("https://drive.google.com/uc?export=download&id=1iq2RUf8qGFEAk1g8wQntP3habOnR3fXF")
+              ok = r.ok and r.content[:5] == b"Word,"
+          elif c == "yfinance":
+              import yfinance as yf
+              ok = len(yf.download("AAPL", period="5d", progress=False)) > 0
+          else:
+              from pytrends.request import TrendReq
+              n = 0
+              for t in ["Apple Inc.", "Microsoft", "Nvidia"]:
+                  p = TrendReq(hl="en-US", tz=0); p.build_payload([t], timeframe="today 12-m")
+                  n += int(not p.interest_over_time().empty); time.sleep(6)
+              print("trends ok", n, "of 3"); ok = n == 3
+          sys.exit(0 if ok else 1)
+          PY
