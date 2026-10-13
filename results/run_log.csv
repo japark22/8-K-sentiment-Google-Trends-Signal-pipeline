@@ -1812,3 +1812,23 @@ run_time,stage,status,count,error_summary
 2026-10-12T20:05:41Z,compute_ic,success,3359,3359 aligned filings; IC + significance per horizon
 2026-10-12T20:05:42Z,trends_ic,partial,51,"weekly IC -0.0128 (t -1.15) over 51 weeks, 219 tickers (44% of universe); 0 weeks on point-in-time vintages"
 2026-10-12T20:05:42Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-13T17:31:49Z,run_start,success,0,INCREMENTAL UPDATE
+2026-10-13T17:31:50Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-10-13T17:32:39Z,fetch_prices,success,503,"503/503 tickers, 248349 rows, 0 failed"
+2026-10-13T17:36:11Z,fetch_8k,success,3445,"3445 8-Ks since 2026-04-13, 0 tickers failed; 20 with EX-99 text, 27MB fetched"
+2026-10-13T17:36:11Z,fetch_trends_ticker,failed,0,DE: The request failed: Google returned a response with code 429
+2026-10-13T17:36:39Z,fetch_trends_ticker,failed,0,EW: The request failed: Google returned a response with code 429
+2026-10-13T17:37:07Z,fetch_trends_ticker,failed,0,EQT: The request failed: Google returned a response with code 429
+2026-10-13T17:38:20Z,fetch_trends_ticker,partial,0,FOX: insufficient data
+2026-10-13T17:47:07Z,fetch_trends_ticker,failed,0,MAR: The request failed: Google returned a response with code 429
+2026-10-13T17:47:22Z,fetch_trends_ticker,failed,0,MRSH: The request failed: Google returned a response with code 429
+2026-10-13T17:47:52Z,fetch_trends_ticker,failed,0,MLM: The request failed: Google returned a response with code 429
+2026-10-13T17:48:59Z,fetch_trends_ticker,failed,0,MAS: The request failed: Google returned a response with code 429
+2026-10-13T17:49:20Z,fetch_trends_ticker,failed,0,MCK: The request failed: Google returned a response with code 429
+2026-10-13T17:50:52Z,fetch_trends_ticker,failed,0,MCO: The request failed: Google returned a response with code 429
+2026-10-13T17:51:07Z,fetch_trends,partial,110,"110 fetched (281 new, 114 stale queued); 9 failed"
+2026-10-13T17:51:10Z,sentiment,success,3445,3445 filings scored (full_LM=True)
+2026-10-13T17:51:10Z,trends_factor,success,17264,17264 weekly factor rows (332 from point-in-time vintages)
+2026-10-13T17:51:12Z,compute_ic,success,3385,3385 aligned filings; IC + significance per horizon
+2026-10-13T17:51:14Z,trends_ic,partial,51,"weekly IC +0.0005 (t +0.06) over 51 weeks, 329 tickers (65% of universe); 0 weeks on point-in-time vintages"
+2026-10-13T17:51:14Z,run_end,success,503,INCREMENTAL UPDATE
