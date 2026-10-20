@@ -1960,3 +1960,18 @@ run_time,stage,status,count,error_summary
 2026-10-19T17:19:43Z,compute_ic,success,3342,3342 aligned filings; IC + significance per horizon
 2026-10-19T17:19:45Z,trends_ic,success,51,"weekly IC +0.0001 (t +0.02) over 51 weeks, 499 tickers (99% of universe); 2 weeks on point-in-time vintages"
 2026-10-19T17:19:45Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-20T14:55:36Z,run_start,success,0,INCREMENTAL UPDATE
+2026-10-20T14:55:36Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-10-20T14:56:18Z,fetch_prices,success,503,"503/503 tickers, 248373 rows, 0 failed"
+2026-10-20T14:59:53Z,fetch_8k,success,3447,"3447 8-Ks since 2026-04-20, 0 tickers failed; 26 with EX-99 text, 15MB fetched"
+2026-10-20T14:59:53Z,fetch_trends_ticker,failed,0,AAPL: The request failed: Google returned a response with code 429
+2026-10-20T15:00:35Z,fetch_trends_ticker,failed,0,ADP: The request failed: Google returned a response with code 429
+2026-10-20T15:00:51Z,fetch_trends_ticker,failed,0,ADSK: The request failed: Google returned a response with code 429
+2026-10-20T15:01:21Z,fetch_trends_ticker,failed,0,AFL: The request failed: Google returned a response with code 429
+2026-10-20T15:02:22Z,fetch_trends_ticker,failed,0,AIG: The request failed: Google returned a response with code 429
+2026-10-20T15:02:22Z,fetch_trends,partial,4,stopped early: Google Trends rate-limited (429). Will resume next run.
+2026-10-20T15:02:25Z,sentiment,success,3447,3447 filings scored (full_LM=True)
+2026-10-20T15:02:25Z,trends_factor,success,26156,26156 weekly factor rows (702 from point-in-time vintages)
+2026-10-20T15:02:27Z,compute_ic,success,3372,3372 aligned filings; IC + significance per horizon
+2026-10-20T15:02:29Z,trends_ic,success,51,"weekly IC +0.0003 (t +0.04) over 51 weeks, 499 tickers (99% of universe); 2 weeks on point-in-time vintages"
+2026-10-20T15:02:29Z,run_end,success,503,INCREMENTAL UPDATE
