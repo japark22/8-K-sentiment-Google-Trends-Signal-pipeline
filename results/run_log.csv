@@ -1999,3 +1999,20 @@ run_time,stage,status,count,error_summary
 2026-10-21T15:13:26Z,compute_ic,success,3359,3359 aligned filings; IC + significance per horizon
 2026-10-21T15:13:28Z,trends_ic,success,51,"weekly IC +0.0005 (t +0.07) over 51 weeks, 499 tickers (99% of universe); 2 weeks on point-in-time vintages"
 2026-10-21T15:13:28Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-22T15:02:22Z,run_start,success,0,INCREMENTAL UPDATE
+2026-10-22T15:02:23Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-10-22T15:03:15Z,fetch_prices,success,503,"503/503 tickers, 248875 rows, 0 failed"
+2026-10-22T15:06:59Z,fetch_8k,success,3469,"3469 8-Ks since 2026-04-22, 0 tickers failed; 39 with EX-99 text, 26MB fetched"
+2026-10-22T15:07:06Z,fetch_trends_ticker,failed,0,ADP: The request failed: Google returned a response with code 429
+2026-10-22T15:07:21Z,fetch_trends_ticker,failed,0,ADSK: The request failed: Google returned a response with code 429
+2026-10-22T15:08:30Z,fetch_trends_ticker,partial,0,BF-B: insufficient data
+2026-10-22T15:08:44Z,fetch_trends_ticker,partial,0,BXP: insufficient data
+2026-10-22T15:10:52Z,fetch_trends_ticker,failed,0,CVX: The request failed: Google returned a response with code 429
+2026-10-22T15:11:07Z,fetch_trends_ticker,failed,0,D: The request failed: Google returned a response with code 429
+2026-10-22T15:14:04Z,fetch_trends_ticker,failed,0,DXCM: The request failed: Google returned a response with code 429
+2026-10-22T15:20:45Z,fetch_trends,partial,113,"113 fetched (0 new, 404 stale queued); 5 failed"
+2026-10-22T15:20:49Z,sentiment,success,3469,3469 filings scored (full_LM=True)
+2026-10-22T15:20:49Z,trends_factor,success,26156,26156 weekly factor rows (821 from point-in-time vintages)
+2026-10-22T15:20:51Z,compute_ic,success,3358,3358 aligned filings; IC + significance per horizon
+2026-10-22T15:20:53Z,trends_ic,success,51,"weekly IC -0.0010 (t -0.13) over 51 weeks, 499 tickers (99% of universe); 2 weeks on point-in-time vintages"
+2026-10-22T15:20:53Z,run_end,success,503,INCREMENTAL UPDATE
