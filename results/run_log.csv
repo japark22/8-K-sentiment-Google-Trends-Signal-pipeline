@@ -2108,3 +2108,47 @@ run_time,stage,status,count,error_summary
 2026-10-27T16:10:10Z,compute_ic,success,3340,3340 aligned filings; IC + significance per horizon
 2026-10-27T16:10:12Z,trends_ic,success,51,"weekly IC -0.0046 (t -0.59) over 51 weeks, 499 tickers (99% of universe); 3 weeks on point-in-time vintages"
 2026-10-27T16:10:12Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-28T16:34:03Z,run_start,success,0,INCREMENTAL UPDATE
+2026-10-28T16:34:03Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-10-28T16:34:55Z,fetch_prices,success,503,"503/503 tickers, 248892 rows, 0 failed"
+2026-10-28T16:38:41Z,fetch_8k,success,3463,"3463 8-Ks since 2026-04-28, 0 tickers failed; 54 with EX-99 text, 45MB fetched"
+2026-10-28T16:38:42Z,fetch_trends_ticker,failed,0,BF-B: The request failed: Google returned a response with code 429
+2026-10-28T16:39:43Z,fetch_trends_ticker,failed,0,A: The request failed: Google returned a response with code 429
+2026-10-28T16:40:06Z,fetch_trends_ticker,failed,0,ABBV: The request failed: Google returned a response with code 429
+2026-10-28T16:40:21Z,fetch_trends_ticker,failed,0,ADSK: The request failed: Google returned a response with code 429
+2026-10-28T16:40:51Z,fetch_trends_ticker,failed,0,AKAM: The request failed: Google returned a response with code 429
+2026-10-28T16:42:05Z,fetch_trends_ticker,failed,0,ALL: The request failed: Google returned a response with code 429
+2026-10-28T16:42:33Z,fetch_trends_ticker,failed,0,AMCR: The request failed: Google returned a response with code 429
+2026-10-28T16:43:08Z,fetch_trends_ticker,failed,0,AMP: The request failed: Google returned a response with code 429
+2026-10-28T16:43:30Z,fetch_trends_ticker,failed,0,AMZN: The request failed: Google returned a response with code 429
+2026-10-28T16:43:52Z,fetch_trends_ticker,failed,0,AON: The request failed: Google returned a response with code 429
+2026-10-28T16:44:07Z,fetch_trends_ticker,failed,0,AOS: The request failed: Google returned a response with code 429
+2026-10-28T16:44:51Z,fetch_trends_ticker,failed,0,APH: The request failed: Google returned a response with code 429
+2026-10-28T16:45:26Z,fetch_trends_ticker,failed,0,ARE: The request failed: Google returned a response with code 429
+2026-10-28T16:45:41Z,fetch_trends_ticker,failed,0,ARES: The request failed: Google returned a response with code 429
+2026-10-28T16:46:25Z,fetch_trends_ticker,failed,0,AVGO: The request failed: Google returned a response with code 429
+2026-10-28T16:46:40Z,fetch_trends_ticker,failed,0,AVY: The request failed: Google returned a response with code 429
+2026-10-28T16:47:23Z,fetch_trends_ticker,failed,0,AXP: The request failed: Google returned a response with code 429
+2026-10-28T16:47:39Z,fetch_trends_ticker,failed,0,AZO: The request failed: Google returned a response with code 429
+2026-10-28T16:48:09Z,fetch_trends_ticker,failed,0,BA: The request failed: Google returned a response with code 429
+2026-10-28T16:50:09Z,fetch_trends_ticker,failed,0,BKR: The request failed: Google returned a response with code 429
+2026-10-28T16:51:04Z,fetch_trends_ticker,failed,0,BRO: The request failed: Google returned a response with code 429
+2026-10-28T16:51:32Z,fetch_trends_ticker,failed,0,C: The request failed: Google returned a response with code 429
+2026-10-28T16:52:52Z,fetch_trends_ticker,failed,0,CDW: The request failed: Google returned a response with code 429
+2026-10-28T16:53:47Z,fetch_trends_ticker,failed,0,CI: The request failed: Google returned a response with code 429
+2026-10-28T16:54:02Z,fetch_trends_ticker,failed,0,CIEN: The request failed: Google returned a response with code 429
+2026-10-28T16:54:39Z,fetch_trends_ticker,failed,0,CL: The request failed: Google returned a response with code 429
+2026-10-28T16:55:34Z,fetch_trends_ticker,failed,0,CNC: The request failed: Google returned a response with code 429
+2026-10-28T16:55:49Z,fetch_trends_ticker,failed,0,CNP: The request failed: Google returned a response with code 429
+2026-10-28T16:56:39Z,fetch_trends_ticker,failed,0,COO: The request failed: Google returned a response with code 429
+2026-10-28T16:57:53Z,fetch_trends_ticker,failed,0,CRWD: The request failed: Google returned a response with code 429
+2026-10-28T16:58:08Z,fetch_trends_ticker,failed,0,CSCO: The request failed: Google returned a response with code 429
+2026-10-28T16:58:58Z,fetch_trends_ticker,failed,0,CTSH: The request failed: Google returned a response with code 429
+2026-10-28T16:59:40Z,fetch_trends_ticker,failed,0,D: The request failed: Google returned a response with code 429
+2026-10-28T16:59:55Z,fetch_trends_ticker,failed,0,DAL: The request failed: Google returned a response with code 429
+2026-10-28T17:00:32Z,fetch_trends,partial,86,"86 fetched (0 new, 290 stale queued); 34 failed"
+2026-10-28T17:00:35Z,sentiment,success,3463,3463 filings scored (full_LM=True)
+2026-10-28T17:00:35Z,trends_factor,success,26156,26156 weekly factor rows (1205 from point-in-time vintages)
+2026-10-28T17:00:37Z,compute_ic,success,3340,3340 aligned filings; IC + significance per horizon
+2026-10-28T17:00:39Z,trends_ic,success,51,"weekly IC -0.0043 (t -0.56) over 51 weeks, 499 tickers (99% of universe); 3 weeks on point-in-time vintages"
+2026-10-28T17:00:40Z,run_end,success,503,INCREMENTAL UPDATE
