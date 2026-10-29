@@ -2152,3 +2152,20 @@ run_time,stage,status,count,error_summary
 2026-10-28T17:00:37Z,compute_ic,success,3340,3340 aligned filings; IC + significance per horizon
 2026-10-28T17:00:39Z,trends_ic,success,51,"weekly IC -0.0043 (t -0.56) over 51 weeks, 499 tickers (99% of universe); 3 weeks on point-in-time vintages"
 2026-10-28T17:00:40Z,run_end,success,503,INCREMENTAL UPDATE
+2026-10-29T16:52:02Z,run_start,success,0,INCREMENTAL UPDATE
+2026-10-29T16:52:03Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-10-29T16:52:42Z,fetch_prices,success,503,"503/503 tickers, 248896 rows, 0 failed"
+2026-10-29T16:56:33Z,fetch_8k,success,3468,"3468 8-Ks since 2026-04-29, 0 tickers failed; 69 with EX-99 text, 54MB fetched"
+2026-10-29T16:56:34Z,fetch_trends_ticker,failed,0,BF-B: The request failed: Google returned a response with code 429
+2026-10-29T16:56:55Z,fetch_trends_ticker,failed,0,ABBV: The request failed: Google returned a response with code 429
+2026-10-29T16:57:10Z,fetch_trends_ticker,failed,0,ADSK: The request failed: Google returned a response with code 429
+2026-10-29T16:57:53Z,fetch_trends_ticker,failed,0,AMCR: The request failed: Google returned a response with code 429
+2026-10-29T16:58:09Z,fetch_trends_ticker,failed,0,AMP: The request failed: Google returned a response with code 429
+2026-10-29T16:58:39Z,fetch_trends_ticker,failed,0,AMZN: The request failed: Google returned a response with code 429
+2026-10-29T16:59:39Z,fetch_trends_ticker,failed,0,AON: The request failed: Google returned a response with code 429
+2026-10-29T16:59:39Z,fetch_trends,partial,3,stopped early: Google Trends rate-limited (429). Will resume next run.
+2026-10-29T16:59:42Z,sentiment,success,3468,3468 filings scored (full_LM=True)
+2026-10-29T16:59:43Z,trends_factor,success,26156,26156 weekly factor rows (1208 from point-in-time vintages)
+2026-10-29T16:59:45Z,compute_ic,success,3328,3328 aligned filings; IC + significance per horizon
+2026-10-29T16:59:47Z,trends_ic,success,51,"weekly IC -0.0046 (t -0.60) over 51 weeks, 499 tickers (99% of universe); 3 weeks on point-in-time vintages"
+2026-10-29T16:59:47Z,run_end,success,503,INCREMENTAL UPDATE
