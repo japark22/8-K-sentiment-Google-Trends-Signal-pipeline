@@ -2309,3 +2309,17 @@ run_time,stage,status,count,error_summary
 2026-11-11T18:07:39Z,compute_ic,success,3305,3305 aligned filings; IC + significance per horizon
 2026-11-11T18:07:41Z,trends_ic,success,51,"weekly IC +0.0022 (t +0.29) over 51 weeks, 498 tickers (99% of universe); 5 weeks on point-in-time vintages"
 2026-11-11T18:07:41Z,run_end,success,503,INCREMENTAL UPDATE
+2026-11-12T18:07:59Z,run_start,success,0,INCREMENTAL UPDATE
+2026-11-12T18:07:59Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-11-12T18:08:38Z,fetch_prices,success,503,"503/503 tickers, 248435 rows, 0 failed"
+2026-11-12T18:12:03Z,fetch_8k,success,3339,"3339 8-Ks since 2026-05-13, 0 tickers failed; 8 with EX-99 text, 4MB fetched"
+2026-11-12T18:12:04Z,fetch_trends_ticker,partial,0,BF-B: insufficient data
+2026-11-12T18:12:31Z,fetch_trends_ticker,failed,0,PANW: The request failed: Google returned a response with code 429
+2026-11-12T18:20:42Z,fetch_trends_ticker,failed,0,TECH: The request failed: Google returned a response with code 429
+2026-11-12T18:23:39Z,fetch_trends_ticker,failed,0,UDR: The request failed: Google returned a response with code 429
+2026-11-12T18:25:17Z,fetch_trends,partial,116,"116 fetched (0 new, 153 stale queued); 3 failed"
+2026-11-12T18:25:20Z,sentiment,success,3339,3339 filings scored (full_LM=True)
+2026-11-12T18:25:20Z,trends_factor,success,26156,26156 weekly factor rows (2285 from point-in-time vintages)
+2026-11-12T18:25:21Z,compute_ic,success,3290,3290 aligned filings; IC + significance per horizon
+2026-11-12T18:25:23Z,trends_ic,success,51,"weekly IC -0.0055 (t -0.62) over 51 weeks, 498 tickers (99% of universe); 5 weeks on point-in-time vintages"
+2026-11-12T18:25:23Z,run_end,success,503,INCREMENTAL UPDATE
