@@ -2323,3 +2323,13 @@ run_time,stage,status,count,error_summary
 2026-11-12T18:25:21Z,compute_ic,success,3290,3290 aligned filings; IC + significance per horizon
 2026-11-12T18:25:23Z,trends_ic,success,51,"weekly IC -0.0055 (t -0.62) over 51 weeks, 498 tickers (99% of universe); 5 weeks on point-in-time vintages"
 2026-11-12T18:25:23Z,run_end,success,503,INCREMENTAL UPDATE
+2026-11-13T17:37:42Z,run_start,success,0,INCREMENTAL UPDATE
+2026-11-13T17:37:43Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-11-13T17:38:22Z,fetch_prices,success,503,"503/503 tickers, 248439 rows, 0 failed"
+2026-11-13T17:41:53Z,fetch_8k,success,3330,"3330 8-Ks since 2026-05-14, 0 tickers failed; 8 with EX-99 text, 12MB fetched"
+2026-11-13T17:45:54Z,fetch_trends,success,37,"37 fetched (0 new, 37 stale queued); 0 failed"
+2026-11-13T17:45:57Z,sentiment,success,3330,3330 filings scored (full_LM=True)
+2026-11-13T17:45:58Z,trends_factor,success,26156,26156 weekly factor rows (2322 from point-in-time vintages)
+2026-11-13T17:46:00Z,compute_ic,success,3262,3262 aligned filings; IC + significance per horizon
+2026-11-13T17:46:02Z,trends_ic,success,50,"weekly IC +0.0006 (t +0.08) over 50 weeks, 498 tickers (99% of universe); 5 weeks on point-in-time vintages"
+2026-11-13T17:46:02Z,run_end,success,503,INCREMENTAL UPDATE
