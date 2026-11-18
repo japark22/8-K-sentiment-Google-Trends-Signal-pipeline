@@ -2359,3 +2359,20 @@ run_time,stage,status,count,error_summary
 2026-11-17T19:21:58Z,compute_ic,success,3225,3225 aligned filings; IC + significance per horizon
 2026-11-17T19:22:00Z,trends_ic,success,51,"weekly IC +0.0012 (t +0.17) over 51 weeks, 497 tickers (99% of universe); 6 weeks on point-in-time vintages"
 2026-11-17T19:22:00Z,run_end,success,503,INCREMENTAL UPDATE
+2026-11-18T18:46:38Z,run_start,success,0,INCREMENTAL UPDATE
+2026-11-18T18:46:39Z,build_universe,success,503,"503 names, 503 CIKs resolved"
+2026-11-18T18:46:43Z,fetch_prices_ticker,failed,0,DIS: insufficient data (no rows)
+2026-11-18T18:47:12Z,fetch_prices,partial,502,"502/503 tickers, 247935 rows, 1 failed"
+2026-11-18T18:50:44Z,fetch_8k,success,3324,"3324 8-Ks since 2026-05-19, 0 tickers failed; 14 with EX-99 text, 12MB fetched"
+2026-11-18T18:52:14Z,fetch_trends_ticker,failed,0,INVH: The request failed: Google returned a response with code 429
+2026-11-18T18:57:39Z,fetch_trends_ticker,failed,0,MCD: The request failed: Google returned a response with code 429
+2026-11-18T18:57:55Z,fetch_trends_ticker,failed,0,MCHP: The request failed: Google returned a response with code 429
+2026-11-18T19:00:39Z,fetch_trends_ticker,failed,0,MSFT: The request failed: Google returned a response with code 429
+2026-11-18T19:01:07Z,fetch_trends_ticker,failed,0,MTD: The request failed: Google returned a response with code 429
+2026-11-18T19:02:21Z,fetch_trends_ticker,failed,0,NOC: The request failed: Google returned a response with code 429
+2026-11-18T19:04:39Z,fetch_trends,partial,114,"114 fetched (0 new, 269 stale queued); 6 failed"
+2026-11-18T19:04:41Z,sentiment,success,3324,3324 filings scored (full_LM=True)
+2026-11-18T19:04:41Z,trends_factor,success,26156,26156 weekly factor rows (2670 from point-in-time vintages)
+2026-11-18T19:04:42Z,compute_ic,success,3225,3225 aligned filings; IC + significance per horizon
+2026-11-18T19:04:43Z,trends_ic,success,51,"weekly IC +0.0008 (t +0.10) over 51 weeks, 497 tickers (99% of universe); 6 weeks on point-in-time vintages"
+2026-11-18T19:04:43Z,run_end,success,503,INCREMENTAL UPDATE
